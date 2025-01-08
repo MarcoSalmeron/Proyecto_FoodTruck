@@ -1,0 +1,32 @@
+.header {
+    /* Ruta a la imagen de fondo */
+    background-image: url('../source/Food_Truck_Header.jpg');
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    align-content: space-around;
+}
+
+.titulo {
+    max-width: 200px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.logo {
+    max-width: 150px;
+    max-height: 300px;
+}
+
+.horario{
+    max-width: 22%;
+    display: inline-block;
+    margin-inline-start: 80%;
+}
+
+li:hover , a{
+    color: white;
+     background-color: #ff6600;
+}
