@@ -41,8 +41,8 @@
     <!-- Filtrar Productos por Categoria al Principio de Pagina -->
     <div class="container-fluid container-sm p-2 ">
         <ul class="nav nav-tabs fs-4">
-            <li class="nav-item">
-                <a class="nav-link" href="#Menu-Tacos">Tacos</a>
+            <li class="nav-item" id ="menu-tacos">
+                <a class="nav-link"  href="#Menu-Tacos">Tacos</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#Menu-Tortas">Tortas</a>
