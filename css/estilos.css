@@ -1,3 +1,6 @@
+body{
+    font-family: "Dosis", serif;
+}
 .header {
     /* Ruta a la imagen de fondo */
     background-image: url('../source/Food_Truck_Header.jpg');
@@ -16,6 +19,8 @@
 }
 
 .logo {
+    border-radius: 15px;
+    margin-top: -20px;
     max-width: 150px;
     max-height: 300px;
 }
