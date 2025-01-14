@@ -1,0 +1,152 @@
+/*Fuente de google fonts: DOSIS*/
+body{
+    font-family: "Dosis", serif;
+}
+
+/* <Header> */
+.image-top-section{
+    height: 160px;
+    width: 100%;
+    border-radius: 15px;
+    position: relative;
+  }
+
+.btn-top-header{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    border: none;
+    border-radius: 9px;
+  }
+  
+.img-main-header{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 85%;
+  }
+  
+.logo-bottom-section{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+  }
+  
+.logo-img-area{
+    height: 140px;
+    width: 120px;
+  }
+  
+.logo-bottom-img{
+    width: 100%;
+  }
+  
+.left-area-logo{
+    display: flex;
+    width: 95%;
+    margin-top: -20px;
+  }
+  
+.logo-text-area{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+  }
+  
+.btn-info{
+    border: none;
+    background: none;
+  }
+/* </Header> */
+
+/* <Nav> */
+.nav-item{
+  text-decoration: none;
+  list-style-type: none;
+
+}
+.nav-item:hover{
+    color: black;
+     background-color: turquoise;
+}
+/*  </Nav> */
+
+/*  <Main> */
+
+/* Hover de Productos*/
+.Tacos{
+    width: 100%;
+    cursor: pointer;
+    box-shadow: 0 0 20px rgb(0,0,0,0.4);
+    border-radius: 25px;
+}
+.Tacos:hover{
+    transform: scale(0.9);
+}
+.Tortas{
+    width: 100%;
+    cursor: pointer;
+    box-shadow: 0 0 20px rgb(0,0,0,0.4);
+    border-radius: 25px;
+}
+.Tortas:hover{
+    transform: scale(0.9);
+}
+.Extras{
+    width: 100%;
+    cursor: pointer;
+    box-shadow: 0 0 20px rgb(0,0,0,0.4);
+    border-radius: 25px;
+}
+.Extras:hover{
+    transform: scale(0.9);
+}
+.Bebidas{
+    width: 100%;
+    cursor: pointer;
+    box-shadow: 0 0 20px rgb(0,0,0,0.4);
+    border-radius: 25px;
+}
+.Bebidas:hover{
+    transform: scale(0.9);
+}
+/* </Main> */
+
+/* BTN VER */
+.btn-ver {
+  position: relative;
+  padding: 6px 16px;
+  border-radius: 0.25rem;
+  background-color: #28a745;
+  color: #fff;
+  transition: background-color 0.15s ease-in-out, top 0.15s ease-in-out,
+    left 0.15s ease-in-out;
+}
+
+.btn-ver:hover,
+.btn-ver:focus {
+  background-color: #218838;
+}
+
+.btn-ver:active {
+  top: 2px;
+  left: 2px;
+}
+
+/* <Footer> */
+footer{
+  background-color: turquoise;
+}
+.btn-footer{
+  position: relative;
+  padding: 6px 16px;
+  border-radius: 0.25rem;
+  background-color: whitesmoke;
+}
+.btn-footer:hover{
+  color: whitesmoke;
+}
+/* </Footer>  */
