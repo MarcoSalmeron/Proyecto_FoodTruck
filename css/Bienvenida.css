@@ -1,0 +1,109 @@
+/*Fuente de google fonts: DOSIS*/
+body {
+  font-family: 'patrick-hand';
+  font-weight: 700;
+  background-color: #f4d2b9; /* Beige claro    */
+  color: #3a3a3a; /* Gris oscuro */
+  margin: 0;
+  padding: 0;
+}
+/* Ajustar pagina al Header,Main y Footer en Filas*/
+.Main-Page{
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+/* <Header> */
+.image-top-section{
+    height: 160px;
+    width: 100%;
+    border-radius: 15px;
+    position: relative;
+  }
+
+.btn-top-header{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    border: none;
+    border-radius: 9px;
+  }
+  
+.img-main-header{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+  }
+  
+.logo-bottom-section{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+  }
+  
+.logo-img-area{
+    height: 140px;
+    width: 120px;
+  }
+  
+.logo-bottom-img{
+    width: 100%;
+  }
+  
+.left-area-logo{
+    display: flex;
+    width: 95%;
+    margin-top: -20px;
+  }
+  
+.logo-text-area{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+  }
+
+.Titulo{
+    font-family: "Rye", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+ 
+/* </Header> */
+
+/*<Main> */
+.nav-item{
+    cursor: pointer;
+    background-color: #f6b95a;
+    border-radius: 15px;
+}
+.nav-item a{
+    text-decoration: none;
+    color: #3a3a3a;
+}
+.nav-item:hover{
+    transform: scale(0.9);
+    text-decoration: underline;
+}
+/* </Main> */
+
+/* <Footer> */
+footer{
+    background-color: #a89354;
+}
+.footer-item{
+    color: whitesmoke;
+}
+.btn-footer{
+    color: whitesmoke;
+    position: relative;
+    padding: 6px 16px;
+    border-radius: 0.25rem;
+  }
+  .btn-footer:hover{
+    text-decoration: underline;
+  }
+/* </Footer> */
