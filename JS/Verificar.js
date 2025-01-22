@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	  checkboxes.prop('checked', false);
   
 	  const cantidades = $(this).find('.cantidad');
-	  cantidades.val(0);
+	  cantidades.val(1);
 
 	  const coments = $(this).find('.form-comment-input');
 	  coments.val('');
