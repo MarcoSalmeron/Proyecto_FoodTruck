@@ -30,10 +30,10 @@
                     <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z" />
                 </svg>
                 <!--Modificar span Respecto al Horario-->
-                <span class="Actividad mx-2" name="Horario">Abierto</span>
+                <span class="Actividad mx-2" name="Horario"></span>
 
                 <!-- Cambiar a Color verde el icono al Abrir y Cambiar a Rojo al Cerrar-->
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="green" class="Actividad bi bi-record-circle" viewBox="0 0 16 16" name="icono-actividad">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="red" class="Actividad bi bi-record-circle" viewBox="0 0 16 16" name="icono-actividad">
                     <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
                     <path d="M11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
                 </svg>
@@ -94,7 +94,7 @@
             <div class="container my-2">
                 <div class="row">
                     <!-- 100% del espacio (Unico Producto) -->
-                    <div class="col-12 pe-2 my-2">
+                    <div class="col-12 my-2">
                         <div class="Tacos">
                             <div class="container-fluid">
                                 <div class="row">
@@ -500,7 +500,7 @@
                     <div class="right-footer">
                         <label for="CANTIDAD">CANTIDAD:</label>    
                         <input type="number" class="cantidad" min="0" max="10" id="CANTIDAD" value="1">
-                        <button type="submit" class="btn btn-primary btn-agregar">Agregar</button>
+                        <button type="submit" class="btn btn-primary btn-agregar PROD">Agregar</button>
                     </div>
                     
                     
@@ -639,7 +639,7 @@
                     <div class="right-footer">
                         <label for="CANTIDAD">CANTIDAD:</label>    
                         <input type="number" class="cantidad" min="0" max="10" id="CANTIDAD" value="1">
-                        <button type="submit" class="btn btn-primary btn-agregar">Agregar</button>
+                        <button type="submit" class="btn btn-primary btn-agregar PROD">Agregar</button>
                     </div>
                 </div>
             </div>
@@ -777,7 +777,7 @@
                     <div class="right-footer">
                         <label for="CANTIDAD">CANTIDAD:</label>    
                         <input type="number" class="cantidad" min="0" max="10" id="CANTIDAD" value="1">
-                        <button type="submit" class="btn btn-primary btn-agregar">Agregar</button>
+                        <button type="submit" class="btn btn-primary btn-agregar PROD">Agregar</button>
                     </div>
                 </div>
             </div>
@@ -927,7 +927,7 @@
                     <div class="right-footer">
                         <label for="CANTIDAD">CANTIDAD:</label>    
                         <input type="number" class="cantidad" min="0" max="10" id="CANTIDAD" value="1">
-                        <button type="submit" class="btn btn-primary btn-agregar">Agregar</button>
+                        <button type="submit" class="btn btn-primary btn-agregar PROD">Agregar</button>
                     </div>
                 </div>
             </div>
@@ -1058,14 +1058,14 @@
                 </div>
 
                 <div class="modal-footer d-flex justify-content-between">  <!-- Footer-Modal -->
-                <div class="left-footer pb-2">
+                    <div class="left-footer pb-2">
                         <label>TOTAL:</label>
                         <span class="fs-3 PRECIO" data-precio-base="22">22</span>MXN
                     </div>
                     <div class="right-footer">
                         <label for="CANTIDAD">CANTIDAD:</label>    
                         <input type="number" class="cantidad" min="0" max="10" id="CANTIDAD" value="1">
-                        <button type="submit" class="btn btn-primary btn-agregar">Agregar</button>
+                        <button type="submit" class="btn btn-primary btn-agregar PROD">Agregar</button>
                     </div>
                 </div>
             </div>
@@ -1103,10 +1103,10 @@
                             <div class="col-12 my-1">
                             <!-- Formulario  -->
                                 <form>
-                                    <label for="opciones" class="form-label fs-5 fw-bold">Selecciona un Tamaño:</label>
-                                    <select class="form-select" id="opciones" name="opciones">
-                                        <option value="Grande">Grande (Orden Completa) 40mxn</option>
-                                        <option value="Chica">Chica (Media Orden) 25mxn</option>
+                                    <label for="opciones" class="form-label fs-5 fw-bold">Selecciona Tamaño de la Orden:</label>
+                                    <select class="form-select" id="tamaño-papas">
+                                        <option value="grande" data-precio-base="40">Grande (Orden Completa) 40mxn</option>
+                                        <option value="pequeño" data-precio-base="25">Chica (Media Orden) 25mxn</option>
                                     </select>
                                     <span class="fs-5 fw-bold">Ingredientes</span>
                                     <div class="form-check">
@@ -1133,10 +1133,16 @@
                     </div>
                 </div>
 
-                <div class="modal-footer">  <!-- Footer-Modal -->
-                <label for="CANTIDAD">CANTIDAD:</label>    
-                <input type="number" class="cantidad" min="0" max="10" id="CANTIDAD">
-                     <button type="submit" class="btn btn-primary">Agregar</button>
+                <div class="modal-footer d-flex justify-content-between">  <!-- Footer-Modal -->
+                    <div class="left-footer pb-2">
+                        <label>TOTAL:</label>
+                        <span class="fs-3 PRECIO-PAPAS">40</span>MXN
+                    </div>
+                    <div class="right-footer">
+                        <label for="cantidad-papas">CANTIDAD:</label>    
+                        <input type="number" class="cantidad" min="0" max="10" id="cantidad-papas" value="1">
+                        <button type="submit" class="btn btn-primary btn-agregar">Agregar</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1173,8 +1179,8 @@
                             <div class="col-12 my-1">
                             <!-- Formulario  -->
                                 <form>
-                                    <label for="opciones" class="form-label">Selecciona un Postre:</label>
-                                    <select class="form-select" id="opciones" name="opciones">
+                                    <label for="opciones" class="form-label">Selecciona un Postre: </label>
+                                    <select class="form-select" id="opciones">
                                         <option value="Mango">GELATINA-(Mango)</option>
                                         <option value="Fresa">GELATINA-(Fresa)</option>
                                         <option value="Limon">GELATINA-(Limon)</option>
@@ -1189,10 +1195,16 @@
                     </div>
                 </div>
 
-                <div class="modal-footer">  <!-- Footer-Modal -->
-                <label for="CANTIDAD">CANTIDAD:</label>    
-                <input type="number" class="cantidad" min="0" max="10" id="CANTIDAD">
-                     <button type="submit" class="btn btn-primary">Agregar</button>
+                <div class="modal-footer d-flex justify-content-between">  <!-- Footer-Modal -->
+                    <div class="left-footer pb-2">
+                        <label>TOTAL:</label>
+                        <span class="fs-3 PRECIO" data-precio-base="25">25</span>MXN
+                    </div>
+                    <div class="right-footer">
+                        <label for="CANTIDAD">CANTIDAD:</label>    
+                        <input type="number" class="cantidad" min="0" max="10" value="1" id="CANTIDAD">
+                        <button type="submit" class="btn btn-primary btn-agregar">Agregar</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1229,12 +1241,12 @@
                             <div class="col-12 my-1">
                             <!-- Formulario  -->
                                 <form>
-                                    <label for="opciones" class="form-label">Selecciona un Agua:</label>
+                                    <label for="opciones" class="form-label">Selecciona un Sabor: </label>
                                     <select class="form-select" id="opciones" name="opciones">
-                                        <option value="Agua-1">Jamaica</option>
-                                        <option value="Agua-2">Horchata</option>
-                                        <option value="Agua-3">Tamarindo</option>
-                                        <option value="Agua-4">Simple</option>
+                                        <option>Jamaica</option>
+                                        <option>Horchata</option>
+                                        <option>Tamarindo</option>
+                                        <option>Simple</option>
                                     </select>
                                 </form>
                             </div>    
@@ -1242,10 +1254,16 @@
                     </div>
                 </div>
 
-                <div class="modal-footer">  <!-- Footer-Modal -->
-                <label for="CANTIDAD">CANTIDAD:</label>    
-                <input type="number" class="cantidad" min="0" max="10" id="CANTIDAD">
-                     <button type="submit" class="btn btn-primary">Agregar</button>
+                <div class="modal-footer d-flex justify-content-between">  <!-- Footer-Modal -->   
+                    <div class="left-footer pb-2">
+                        <label>TOTAL:</label>
+                        <span class="fs-3 PRECIO" data-precio-base="25">25</span>MXN
+                    </div>
+                    <div class="right-footer">
+                        <label for="CANTIDAD">CANTIDAD:</label>    
+                        <input type="number" class="cantidad" min="0" max="10" value="1" id="CANTIDAD">
+                        <button type="submit" class="btn btn-primary btn-agregar">Agregar</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1295,10 +1313,16 @@
                     </div>
                 </div>
 
-                <div class="modal-footer">  <!-- Footer-Modal -->
-                <label for="CANTIDAD">CANTIDAD:</label>    
-                <input type="number" class="cantidad" min="0" max="10" id="CANTIDAD">
-                     <button type="submit" class="btn btn-primary">Agregar</button>
+                <div class="modal-footer d-flex justify-content-between">  <!-- Footer-Modal -->    
+                    <div class="left-footer pb-2">
+                        <label>TOTAL:</label>
+                        <span class="fs-3 PRECIO" data-precio-base="25">25</span>MXN
+                    </div>
+                    <div class="right-footer">
+                        <label for="CANTIDAD">CANTIDAD:</label>    
+                        <input type="number" class="cantidad" min="0" max="10" value="1" id="CANTIDAD">
+                        <button type="submit" class="btn btn-primary btn-agregar">Agregar</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1325,7 +1349,7 @@
                                         <img src="./source//MENU/boing.jpg" alt="Bebidas-img" width="100" height="100" class="rounded-3">
                                     </div>
                                     <div class="img-text-area p-2">
-                                        <p>Boing (354 ml)</p>
+                                        <p>Boing diferentes sabores (354 ml)</p>
                                     </div>
                                 </div>
                             </div>
@@ -1335,7 +1359,7 @@
                             <div class="col-12 my-1">
                             <!-- Formulario  -->
                                 <form>
-                                    <label for="opciones" class="form-label">Selecciona un Jugo:</label>
+                                    <label for="opciones" class="form-label">Selecciona un Sabor:</label>
                                     <select class="form-select" id="opciones" name="opciones">
                                         <option value="Mango">Mango</option>
                                         <option value="Guayaba">Guayaba</option>
@@ -1348,10 +1372,16 @@
                     </div>
                 </div>
 
-                <div class="modal-footer">  <!-- Footer-Modal -->
-                <label for="CANTIDAD">CANTIDAD:</label>    
-                <input type="number" class="cantidad" min="0" max="10" id="CANTIDAD">
-                     <button type="submit" class="btn btn-primary">Agregar</button>
+                <div class="modal-footer d-flex justify-content-between">  <!-- Footer-Modal -->
+                    <div class="left-footer pb-2">
+                        <label>TOTAL:</label>
+                        <span class="fs-3 PRECIO" data-precio-base="25">25</span>MXN
+                    </div>
+                    <div class="right-footer">
+                        <label for="CANTIDAD">CANTIDAD:</label>    
+                        <input type="number" class="cantidad" min="0" max="10" value="1" id="CANTIDAD">
+                        <button type="submit" class="btn btn-primary btn-agregar">Agregar</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1565,8 +1595,11 @@
     <!-- Boostrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- JavaScript -->
+    <script src="./JS/Negocio.js"></script>
     <script src="./JS/Verificar.js"></script>
+    <script src="./JS/Cantidad.js"></script>
     <script src="./JS/Precios.js"></script>
+    <script src="./JS/Papas.js"></script>
 
 </body>
 

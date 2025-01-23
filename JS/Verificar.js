@@ -1,10 +1,10 @@
-// Verificar Check-Box al hacer click en Agregar
+// Verificar Check-Box al hacer click en Agregar, SOLO SI TIENEN PROTEINAS SELECCIONABLES!
 document.addEventListener('DOMContentLoaded', function () {
-	const agregarBtns = document.getElementsByClassName('btn-agregar');
+	let agregarBtns = document.getElementsByClassName('PROD');
   
 	for (let i = 0; i < agregarBtns.length; i++) {
 	  agregarBtns[i].addEventListener('click', function () {
-		const checkedCheckboxes = document.querySelectorAll('#Ingredientes .form-check-input-proteina:checked');
+		let checkedCheckboxes = document.querySelectorAll('#Ingredientes .form-check-input-proteina:checked');
   
 		if (checkedCheckboxes.length === 0) {
 		  Swal.fire({
@@ -18,46 +18,26 @@ document.addEventListener('DOMContentLoaded', function () {
 			title: "Oops...",
 			text: "Maximo 2 Proteinas por Orden!"
 		  });
-		} else {
-		  // Verificar Cantidad en Modal
-		  const cantidades = document.getElementsByClassName('cantidad');
-		  let cantidadValida = true;
-  
-		  for (let i = 0; i < cantidades.length; i++) {
-			const cantidad = parseInt(cantidades[i].value, 10);
-  
-			if (cantidad < 1 || cantidad > 10) {
-			  cantidadValida = false;
-			  Swal.fire({
-				icon: "error",
-				title: "Oops...",
-				text: "Debes Escoger una Cantidad del 1 al 10!"
-			  });
-			  break;
-			}
-		  }
-  
-		  if (cantidadValida) {
-			// Aquí agregar la lógica para guardar los cambios
-			alert('Cambios guardados correctamente.');
-		  }
-		}
+		} 
+		
 	  });
 	}
   
-	// Evento para desmarcar los checkboxes y reiniciar el input number y comentarios al cerrar cualquier modal
-	$('.modal').on('hidden.bs.modal', function () {
-	  const checkboxes = $(this).find('input[type="checkbox"]');
-	  checkboxes.prop('checked', false);
-  
-	  const cantidades = $(this).find('.cantidad');
-	  cantidades.val(1);
+	//Reiniciar Valores al cerrar cualquier modal
+	$('.modal').on('hidden.bs.modal', function() {
+		$(this).find('input[type="checkbox"]').prop('checked', false);
+		$(this).find('.form-comment-input').val('');
+		$(this).find('.cantidad').val(1);
+		$(this).find('.PRECIO').text($(this).find('.PRECIO').data('precio-base'));
 
-	  const coments = $(this).find('.form-comment-input');
-	  coments.val('');
+	  });
 
-	  const precioSpan = $(this).find('.PRECIO');
-	  const precioBase = precioSpan.data('precio-base');
-	  precioSpan.text(precioBase);
-	});
-  });
+	//Al Abrir modal Mostrar Precio Base
+	$('.modal').on('shown.bs.modal', function() {
+		$(this).find('.PRECIO').text($(this).find('.PRECIO').data('precio-base'));
+		$(this).find('.PRECIO-PAPAS').text($(this).find('#tamaño-papas option:selected').data('precio-base'));
+
+	  });	  
+	  
+});
+	

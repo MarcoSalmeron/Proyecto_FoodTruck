@@ -26,7 +26,7 @@
                     <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z" />
                 </svg>
                 <!--Modificar span Respecto al Horario-->
-                <span class="Actividad mx-2" name="Horario">Abierto</span>
+                <span class="Actividad mx-2" name="Horario"></span>
 
                 <!-- Cambiar a Color verde el icono al Abrir y Cambiar a Rojo al Cerrar-->
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="green" class="Actividad bi bi-record-circle" viewBox="0 0 16 16" name="icono-actividad">
@@ -84,7 +84,7 @@
             <div class="container my-2">
                 <div class="row">
                     <!-- 100% en Celular y 50% en Superiores -->
-                    <div class="col-12 col-md-6 pe-2 my-2">
+                    <div class="col-12 my-2">
                         <div class="Tacos">
                             <div class="container-fluid">
                                 <div class="row">
@@ -100,28 +100,6 @@
                                     <!-- Boton (Modal)-->
                                     <div class="col-12 text-center p-3">
                                         <a role="button" id="btn-Tacos-1" class="btn-mod" data-bs-toggle="modal" data-bs-target="#M-Mod-Tacos-1">MODIFICAR</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- 100% en Celular y 50% en Superiores -->
-                    <div class="col-12 col-md-6 d-flex ps-2 my-2">
-                        <div class="Extras">
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <!-- Producto usando 100% del espacio -->
-                                    <div class="col-12 d-flex p-3">
-                                        <img src="./source//MENU/postres.webp" alt="Postres" class="Extras-Menu rounded-5" width="150px" height="170px">
-                                        <div class="Descripcion px-3">
-                                            <h3>Extras</h3>
-                                            <hr>
-                                            <p class="Descripcion fs-5">Postres y Complementos</p>
-                                        </div>
-                                    </div>
-                                    <!-- Boton (Lleva a Categoria: Extras)-->
-                                    <div class="col-12 text-center p-3">
-                                        <a role="button" href="#Menu-Extras" id="btn-Postres-1" class="btn-mod">MODIFICAR</a>
                                     </div>
                                 </div>
                             </div>
@@ -422,8 +400,8 @@
                 </div>
 
                 <div class="modal-footer">  <!-- Footer-Modal -->
-                    <input type="number" placeholder="CANTIDAD" id="cantidad">
-                     <button type="submit" class="btn btn-primary" id="Agregar-Cambios">Aceptar</button>
+                    <input type="number" placeholder="CANTIDAD" class="cantidad">
+                     <button type="submit" class="btn btn-primary btn-agregar" id="Agregar-Cambios">Aceptar</button>
                 </div>
             </div>
         </div>
@@ -472,8 +450,8 @@
                 </div>
 
                 <div class="modal-footer">  <!-- Footer-Modal -->
-                    <input type="number" placeholder="CANTIDAD" id="cantidad">
-                     <button type="submit" class="btn btn-primary" id="Agregar-Cambios">Aceptar</button>
+                    <input type="number" placeholder="CANTIDAD" class="cantidad">
+                     <button type="submit" class="btn btn-primary btn-agregar" id="Agregar-Cambios">Aceptar</button>
                 </div>
             </div>
         </div>
@@ -522,8 +500,8 @@
                 </div>
 
                 <div class="modal-footer">  <!-- Footer-Modal -->
-                    <input type="number" placeholder="CANTIDAD" id="cantidad">
-                     <button type="submit" class="btn btn-primary" id="Agregar-Cambios">Aceptar</button>
+                    <input type="number" placeholder="CANTIDAD" class="cantidad">
+                     <button type="submit" class="btn btn-primary btn-agregar" id="Agregar-Cambios">Aceptar</button>
                 </div>
             </div>
         </div>
@@ -572,8 +550,8 @@
                 </div>
 
                 <div class="modal-footer">  <!-- Footer-Modal -->
-                    <input type="number" placeholder="CANTIDAD" id="cantidad">
-                     <button type="submit" class="btn btn-primary" id="Agregar-Cambios">Aceptar</button>
+                    <input type="number" placeholder="CANTIDAD" class="cantidad">
+                     <button type="submit" class="btn btn-primary btn-agregar" id="Agregar-Cambios">Aceptar</button>
                 </div>
             </div>
         </div>
@@ -622,8 +600,8 @@
                 </div>
 
                 <div class="modal-footer">  <!-- Footer-Modal -->
-                    <input type="number" placeholder="CANTIDAD" id="cantidad">
-                     <button type="submit" class="btn btn-primary" id="Agregar-Cambios">Aceptar</button>
+                    <input type="number" placeholder="CANTIDAD" class="cantidad">
+                     <button type="submit" class="btn btn-primary btn-agregar" id="Agregar-Cambios">Aceptar</button>
                 </div>
             </div>
         </div>
@@ -672,8 +650,8 @@
                 </div>
 
                 <div class="modal-footer">  <!-- Footer-Modal -->
-                    <input type="number" placeholder="CANTIDAD" id="cantidad">
-                     <button type="submit" class="btn btn-primary" id="Agregar-Cambios">Aceptar</button>
+                    <input type="number" placeholder="CANTIDAD" class="cantidad">
+                     <button type="submit" class="btn btn-primary btn-agregar" id="Agregar-Cambios">Aceptar</button>
                 </div>
             </div>
         </div>
@@ -739,8 +717,8 @@
                 </div>
 
                 <div class="modal-footer">  <!-- Footer-Modal -->
-                    <input type="number" placeholder="CANTIDAD" id="cantidad">
-                     <button type="submit" class="btn btn-primary" id="Agregar-Cambios">Aceptar</button>
+                    <input type="number" placeholder="CANTIDAD" class="cantidad">
+                     <button type="submit" class="btn btn-primary btn-agregar" id="Agregar-Cambios">Aceptar</button>
                 </div>
             </div>
         </div>
@@ -803,8 +781,8 @@
                 </div>
 
                 <div class="modal-footer">  <!-- Footer-Modal -->
-                    <input type="number" placeholder="CANTIDAD" id="cantidad">
-                     <button type="submit" class="btn btn-primary" id="Agregar-Cambios">Aceptar</button>
+                    <input type="number" placeholder="CANTIDAD" class="cantidad">
+                     <button type="submit" class="btn btn-primary btn-agregar" id="Agregar-Cambios">Aceptar</button>
                 </div>
             </div>
         </div>
@@ -867,8 +845,8 @@
                 </div>
 
                 <div class="modal-footer">  <!-- Footer-Modal -->
-                    <input type="number" placeholder="CANTIDAD" id="cantidad">
-                     <button type="submit" class="btn btn-primary" id="Agregar-Cambios">Aceptar</button>
+                    <input type="number" placeholder="CANTIDAD" class="cantidad">
+                     <button type="submit" class="btn btn-primary btn-agregar" id="Agregar-Cambios">Aceptar</button>
                 </div>
             </div>
         </div>
@@ -931,8 +909,8 @@
                 </div>
 
                 <div class="modal-footer">  <!-- Footer-Modal -->
-                    <input type="number" placeholder="CANTIDAD" id="cantidad">
-                     <button type="submit" class="btn btn-primary" id="Agregar-Cambios">Aceptar</button>
+                    <input type="number" placeholder="CANTIDAD" class="cantidad">
+                     <button type="submit" class="btn btn-primary btn-agregar" id="Agregar-Cambios">Aceptar</button>
                 </div>
             </div>
         </div>
@@ -971,8 +949,15 @@
         </div>
     </div>
 
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Sweet Alert JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- Boostrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JavaScript -->
+    <script src="./JS/Negocio.js"></script>
+    <script src="./JS/Cantidad.js"></script>
 </body>
 
 </html>
