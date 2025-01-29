@@ -1,6 +1,7 @@
 /*Fuente de google fonts: DOSIS*/
 .main-body {
-  font-family: 'patrick-hand';
+  font-family: "Oldenburg", serif;
+  font-style: normal;
   font-weight: 700;
   background-color: #f4d2b9; /* Beige claro    */
   color: #3a3a3a; /* Gris oscuro */
@@ -40,6 +41,8 @@
   
 .logo-bottom-img{
     width: 100%;
+    border-radius: 100%;
+    box-shadow: 5px 5px 15px 5px  #3a3a3a;
   }
   
 .left-area-logo{
@@ -49,7 +52,7 @@
   }
 
 .Titulo{
-    font-family: "Rye", serif;
+    font-family: 'patrick-hand';
     font-weight: 400;
     font-style: normal;
     color: whitesmoke;
@@ -63,20 +66,15 @@
 /* </Header> */
 
 footer{
-    background-color: #a89354;
-}
-.footer-item{
-    color: whitesmoke;
-}
-.footer-item a{
-    color: whitesmoke;
+    background-color: #D88A5D;
 }
 .btn-footer{
-    color: whitesmoke;
+    color: black;
     position: relative;
     padding: 6px 16px;
     border-radius: 0.25rem;
 }
 .btn-footer:hover{
-    text-decoration: underline;
+    text-decoration: none;
+    color: whitesmoke;
 } 

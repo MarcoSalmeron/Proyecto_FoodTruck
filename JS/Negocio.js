@@ -1,33 +1,20 @@
-document.addEventListener('DOMContentLoaded', function() {
-  // Recuperar el estado del botón desde localStorage
-  let estadoBoton = localStorage.getItem('estadoBoton');
-
-  // Establecer el estado del botón según el valor guardado
-  if (estadoBoton === 'CERRADO') {
-    document.querySelector('.Actividad').textContent = 'CERRADO';
-    document.querySelector('.Actividad.bi.bi-record-circle').setAttribute('fill', 'red');
-    $('.btn-agregar').attr('disabled', true);
-  } else if (estadoBoton === 'ABIERTO') {
-    document.querySelector('.Actividad').textContent = 'ABIERTO';
-    document.querySelector('.Actividad.bi.bi-record-circle').setAttribute('fill', 'green');
-    $('.btn-agregar').attr('disabled', false);
-  }
-
-  // Agregar eventos de clic a los botones
-  document.getElementById('Cerrar').addEventListener('click', function() {
-    document.querySelector('.Actividad').textContent = 'CERRADO';
-    document.querySelector('.Actividad.bi.bi-record-circle').setAttribute('fill', 'red');
-    localStorage.setItem('estadoBoton', 'CERRADO');
-    $('.btn-agregar').attr('disabled', true); // Desactivar botones
-  });
-
-  document.getElementById('Abrir').addEventListener('click', function() {
-    document.querySelector('.Actividad').textContent = 'ABIERTO';
-    document.querySelector('.Actividad.bi.bi-record-circle').setAttribute('fill', 'green');
-    localStorage.setItem('estadoBoton', 'ABIERTO');
-    $('.btn-agregar').attr('disabled', false); // Activar botones
-  });
+//Boton en Header de Bienvenida que dirige al Login
+let btn_login = document.getElementById("top-btn-login");
+btn_login.addEventListener('click', () => {
+    Swal.fire({
+        title: '¡Cuidado!',
+        text: 'Solo personal autorizado puede entrar y estarás saliendo de la página principal.',
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#d33', // Rojo
+        cancelButtonColor: '#28a745', // Verde
+        confirmButtonText: 'Aceptar',
+        cancelButtonText: 'Regresar'
+    }).then((result) => {
+        if (result.isConfirmed) {
+            window.location.href = 'Login.php'; // Redirigir a un archivo PHP
+        }
+    });
 });
-
 
 

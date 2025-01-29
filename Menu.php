@@ -12,7 +12,7 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oldenburg&display=swap" rel="stylesheet">
     
 
     
@@ -45,7 +45,7 @@
             <!-- Logo y Titulo -->
             <div class="left-area-logo">
                 <div class="logo-img-area">
-                    <img src="./source/Chilango_Street_logo.jpg" class="logo-bottom-img rounded-3" alt="Logo">
+                    <img src="./source/Chilango_Street_logo.jpg" class="logo-bottom-img" alt="Logo">
                 </div>
                 <div class="logo-text-area mt-3">
                     <h1 class="Titulo">Chilango'Street</h1>
@@ -64,17 +64,17 @@
     <!-- Navegacion de Categoria -->
     <div class="container-md">
         <!-- Filtrar Productos por Categoria al Principio de Pagina -->
-        <ul class="nav fs-4 d-flex justify-content-center">
-            <li>
+        <ul class="nav fs-4">
+            <li class="my-2 mx-auto">
                 <a class="p-3 nav-item rounded-bottom-4" href="#Menu-Tacos">Tacos</a>
             </li>
-            <li>
+            <li class="my-2 mx-auto">
                 <a class="p-3 nav-item rounded-bottom-4" href="#Menu-Tortas">Antojitos</a>
             </li>
-            <li>
+            <li class="my-2 mx-auto">
                 <a class="p-3 nav-item rounded-bottom-4" href="#Menu-Extras">Extras</a>
             </li>
-            <li>
+            <li class="my-2 mx-auto">
                 <a class="p-3 nav-item rounded-bottom-4" href="#Menu-Bebidas">Bebidas</a>
             </li>
         </ul>
@@ -87,8 +87,8 @@
         <!-- Categoria: Tacos  Formato de Filas de 2 columnas-->
         <div id="Menu-Tacos" class="container my-2">
             <!-- Titulo de Categoria -->
-            <div class="Categoria p-4 rounded-5 text-center">
-                <h4 >TACOS:<span class="fw-bold fs-2"> 22 </span>MXN</h4>
+            <div class="Categoria p-4 rounded-4 text-center">
+                <h2 >Tacos</h2>
             </div>
 
             <div class="container my-2">
@@ -109,6 +109,7 @@
                                     </div>
                                     <!-- Boton (Modal)-->
                                     <div class="col-12 text-center p-3">
+                                    <h6> <span class="Precio-Tacos fw-bold fs-5" id="Precio-Tacos">22</span> MXN</h6>
                                         <a role="button" id="btn-Tacos-1" class="btn btn-ver" data-bs-toggle="modal" data-bs-target="#M-Tacos-1">Ver</a>
                                     </div>
                                 </div>
@@ -122,8 +123,8 @@
         <!-- Categoria: Antojitos Formato de Filas de 2 Columnas -->
         <div id="Menu-Tortas" class="container my-2">
             <!-- Titulo de Categoria -->
-            <div class="Categoria p-4 rounded-5">
-                <h4>Antojitos</h4>
+            <div class="Categoria p-4 rounded-4">
+                <h2>Antojitos</h2>
             </div>
 
             <div class="container my-2">
@@ -134,17 +135,17 @@
                             <div class="container-fluid">
                                 <div class="row">
                                     <!-- Producto usando 100% del espacio -->
-                                    <div class="col-12 d-flex p-3">
+                                    <div class="col-12 d-flex p-3 my-2">
                                         <img src="./source//MENU/tortas1.jpg.png" alt="Torta1" class="Tortas-Menu rounded-5" width="150px" height="170px">
                                         <div class="Descripcion px-3">
                                             <h3>Torta Sencilla</h3>
                                             <hr>
-                                            <p class="Descripcion fs-5">Proteína de tu elección, mayonesa, frijoles, jitomate y cebolla caramelizada</p>
+                                            <p class="Descripcion fs-5 my-auto">Proteína de tu elección, mayonesa, frijoles, jitomate y cebolla caramelizada</p>
                                         </div>
                                     </div>
                                     <!-- Boton (Modal)-->
-                                    <div class="col-12 text-center p-3">
-                                        <p class="fs-5"> <span class="fs-3 fw-bold">25</span> MXN </p>
+                                    <div class="col-12 text-center p-3 my-auto">
+                                        <p class="fs-5"> <span class="fs-3 fw-bold" id="Precio-Torta">25</span> MXN </p>
                                         <a role="button" id="btn-Tortas-1" class="btn btn-ver" style="max-height : 40px;"  data-bs-toggle="modal" data-bs-target="#M-Torta-1">Ver</a>
                                     </div>
                                 </div>
@@ -159,14 +160,14 @@
                                     <!-- Producto usando 100% del espacio -->
                                     <div class="col-12 d-flex p-3">
                                         <img src="./source//MENU/tortas2.jpg.png" alt="Torta2" class="Tortas-Menu rounded-5" width="150px" height="170px">
-                                        <div class="Descripcion px-3">
+                                        <div class="Descripcion px-3 my-auto">
                                             <h3>Gorditas (Martes)</h3>
                                             <hr>
-                                            <p class="Descripcion fs-5">Tortilla de masa gruesa rellena de chicharrón + proteína de tu elección, lechuga, queso y crema</p>
+                                            <p class="Descripcion fs-5 my-auto">Tortilla de masa gruesa rellena de chicharrón + proteína de tu elección, lechuga, queso y crema</p>
                                         </div>
                                     </div>
-                                    <div class="col-12 text-center p-3">
-                                        <p class="fs-5"> <span class="fs-3 fw-bold">22</span> MXN </p>
+                                    <div class="col-12 text-center p-3 my-auto">
+                                        <p class="fs-5"> <span class="fs-3 fw-bold" id="Precio-Gorditas">22</span> MXN </p>
                                         <a role="button" id="btn-Tortas-2" class="btn btn-ver" style="max-height : 40px;" data-bs-toggle="modal" data-bs-target="#M-Torta-2">Ver</a>
                                     </div>
                                 </div>
@@ -179,17 +180,17 @@
                             <div class="container-fluid">
                                 <div class="row">
                                     <!-- Producto usando 100% del espacio -->
-                                    <div class="col-12 d-flex p-3">
+                                    <div class="col-12 d-flex p-3 my-auto">
                                         <img src="./source//MENU/Tortas3.jpg.png" alt="Torta3" class="Tortas-Menu rounded-5" width="150px" height="170px">
                                         <div class="Descripcion px-3">
                                             <h3>Pambazo (Miercoles)</h3>
                                             <hr>
-                                            <p class="Descripcion fs-5">Pan asado con salsa de chiles secos, relleno de papa con longaniza + proteína de tu elección, lechuga, queso y crema</p>
+                                            <p class="Descripcion fs-5 my-auto">Pan asado con salsa de chiles secos, relleno de papa con longaniza + proteína de tu elección, lechuga, queso y crema</p>
                                         </div>
                                     </div>
                                     <!-- Boton (Modal)-->
-                                    <div class="col-12 text-center p-3">
-                                        <p class="fs-5"> <span class="fs-3 fw-bold">25</span> MXN </p>
+                                    <div class="col-12 text-center p-3 my-auto">
+                                        <p class="fs-5"> <span class="fs-3 fw-bold" id="Precio-Pambazo">25</span> MXN </p>
                                         <a role="button" id="btn-Tortas-3" class="btn btn-ver" style="max-height : 40px;" data-bs-toggle="modal" data-bs-target="#M-Torta-3">Ver</a>
                                     </div>
                                 </div>
@@ -202,16 +203,16 @@
                             <div class="container-fluid">
                                 <div class="row">
                                     <!-- Producto usando 100% del espacio -->
-                                    <div class="col-12 d-flex p-3 mb-2">
+                                    <div class="col-12 d-flex p-3 my-2">
                                         <img src="./source//MENU/Tortas4.jpg.png" alt="Torta4" class="Tortas-Menu rounded-5" width="150px" height="170px">
                                         <div class="Descripcion px-3">
                                             <h3>Huarache (Jueves)</h3>
                                             <hr>
-                                            <p class="Descripcion fs-5">Tortilla alargada con frijoles, proteína de tu elección, nopales, queso y crema</p>
+                                            <p class="Descripcion fs-5 my-auto">Tortilla alargada con frijoles, proteína de tu elección, nopales, queso y crema</p>
                                         </div>
                                     </div>
-                                    <div class="col-12 text-center p-3 mt-4">
-                                        <p class="fs-5"> <span class="fs-3 fw-bold">22</span> MXN </p>
+                                    <div class="col-12 text-center p-3 my-4">
+                                        <p class="fs-5"> <span class="fs-3 fw-bold" id="Precio-Huarache">22</span> MXN </p>
                                         <a role="button" href="#0" id="btn-Tortas-4" class="btn btn-ver" style="max-height : 40px;" data-bs-toggle="modal" data-bs-target="#M-Torta-4">Ver</a>
                                     </div>
                                 </div>
@@ -225,8 +226,8 @@
         <!-- Categoria: Extras Formato de 2 columnas-->
         <div id="Menu-Extras" class="container my-2">
             <!-- Titulo de Categoria -->
-            <div class="Categoria p-4 rounded-5">
-                <h4>EXTRAS</h4>
+            <div class="Categoria p-4 rounded-4">
+                <h2>Extras</h2>
             </div>
 
             <div class="container my-2">
@@ -262,11 +263,11 @@
                                         <h3>Postres</h3>
                                         <hr>
                                         <img src="./source//MENU/postres.webp" alt="Postres" class="Extras-Menu rounded-5" width="200px" height="200px">
-                                        <p class="Descripcion fs-5 my-3">Yugurt con Gelatina y Flan</p>
+                                        <p class="Descripcion fs-5 my-4">Yugurt con Gelatina y Flan</p>
                                         <p class="fs-5"><span class="fs-3 fw-bold" id="Precio-Postres">25</span> MXN</p>
                                     </div>
                                     <!-- Boton (Modal)-->
-                                    <div class="col-12 text-center p-3">
+                                    <div class="col-12 text-center p-3 mt-3">
                                         <a role="button" id="btn-Extras-2" class="btn btn-ver" style="max-height : 40px;" data-bs-toggle="modal" data-bs-target="#M-Extras-2">Ver</a>
                                     </div>
                                 </div>
@@ -280,8 +281,8 @@
         <!-- Categoria: Bebidas Formato de 3 columnas-->
         <div id="Menu-Bebidas" class="container my-2">
             <!-- Titulo de Categoria -->
-            <div class="Categoria p-4 rounded-5">
-                <h4>BEBIDAS:<span class="fw-bold fs-2"> 25</span> MXN</h4>
+            <div class="Categoria p-4 rounded-4">
+                <h2>Bebidas</h2>
             </div>
 
             <div class="container my-2">
@@ -297,6 +298,7 @@
                                         <hr>
                                         <img src="./source//MENU/agua_del_dia.avif" alt="Agua del Dia" class="Bebidas-Menu rounded-3" width="200px" height="200px">
                                         <p class="Descripcion fs-5 my-2">Agua del Dia (500 ml)</p>
+                                        <h6> <span class="Precio-Bebidas fw-bold fs-5" id="Precio-Agua">25</span> MXN</h6>
                                     </div>
                                     <!-- Boton (Modal)-->
                                     <div class="col-12 text-center my-2">
@@ -317,6 +319,7 @@
                                         <hr>
                                         <img src="./source//MENU/refresco.jpeg" alt="Refrescos" class="Bebidas-Menu rounded-3" width="200px" height="200px">
                                         <p class="Descripcion fs-5 my-2">Refrescos de (355 ml)</p>
+                                        <h6> <span class="Precio-Bebidas fw-bold fs-5" id="Precio-Refrescos">25</span> MXN</h6>
                                     </div>
                                     <!-- Boton (Modal)-->
                                     <div class="col-12 text-center my-2">
@@ -337,6 +340,7 @@
                                         <hr>
                                         <img src="./source//MENU/boing.jpg" alt="Jugos" class="Bebidas-Menu rounded-3" width="200px" height="200px">
                                         <p class="Descripcion fs-5 my-2">Boing de (354 ml)</p>
+                                        <h6><span class="Precio-Bebidas fw-bold fs-5" id="Precio-Jugos">25</span> MXN</h6>
                                     </div>
                                     <!-- Boton (Modal)-->
                                     <div class="col-12 text-center my-2">
@@ -354,22 +358,22 @@
     <!-- Footer: Regresar a Bienvenida e Info -->
     <footer class="mt-3 rounded-top-4">
         <div class="container-fluid text-center">
-            <div class="row mx-2">
+            <div class="row mx-5">
                 <!-- 100% en Celular y 10% en Superiores -->
-                <div class="col-12 col-md-2 my-1 mx-2">
+                <div class="col-12 col-md-2 my-1 mx-auto">
                     <div class="footer-item">
                         <a role="button" href="Bienvenida.php" id="btn-footer-Inicio" class="btn btn-footer">Bienvenida</a>
                     </div>
                 </div>
-                <!-- 100% en Celular y 10% en Superiores -->
-                <div class="col-12 col-md-2 my-1 mx-2">
-                    <div class="footer-item">
-                        <a role="button" id="btn-footer-Horario" class="btn btn-footer" data-bs-toggle="modal" data-bs-target="#Horario">Horarios</a>
-                    </div>
-                </div>
-                <div class="col-12 col-md-2 my-1 mx-2">
+                <div class="col-12 col-md-2 my-1 mx-auto">
                     <div class="footer-item p-2">
                         <span>Copyright ©</span>
+                    </div>
+                </div>
+                <!-- 100% en Celular y 10% en Superiores -->
+                <div class="col-12 col-md-2 my-1 mx-auto">
+                    <div class="footer-item">
+                        <a role="button" id="btn-footer-Horario" class="btn btn-footer" data-bs-toggle="modal" data-bs-target="#Horario">Horarios</a>
                     </div>
                 </div>
             </div>
@@ -386,6 +390,7 @@
                         <img src="./source/Chilango_Street_logo.jpg" alt="Chilango-Logo" width="40" height="40" class="rounded-3 me-2">
                     </div>
                     <h1>Tacos:</h1>
+                    <button type="reset" class="btn-close bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
 
                 <div class="modal-body">    <!-- Body-Modal -->
@@ -519,6 +524,7 @@
                         <img src="./source/Chilango_Street_logo.jpg" alt="Chilango-Logo" width="40" height="40" class="rounded-3 me-2">
                     </div>
                     <h1>Torta Sencilla:</h1>
+                    <button type="reset" class="btn-close bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
 
                 <div class="modal-body">    <!-- Body-Modal -->
@@ -656,6 +662,7 @@
                         <img src="./source/Chilango_Street_logo.jpg" alt="Chilango-Logo" width="40" height="40" class="rounded-3 me-2">
                     </div>
                     <h1>Gordita:</h1>
+                    <button type="reset" class="btn-close bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
 
                 <div class="modal-body">    <!-- Body-Modal -->
@@ -794,6 +801,7 @@
                         <img src="./source/Chilango_Street_logo.jpg" alt="Chilango-Logo" width="40" height="40" class="rounded-3 me-2">
                     </div>
                     <h1>Pambazo:</h1>
+                    <button type="reset" class="btn-close bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
 
                 <div class="modal-body">    <!-- Body-Modal -->
@@ -944,6 +952,7 @@
                         <img src="./source/Chilango_Street_logo.jpg" alt="Chilango-Logo" width="40" height="40" class="rounded-3 me-2">
                     </div>
                     <h1>Huarache:</h1>
+                    <button type="reset" class="btn-close bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
 
                 <div class="modal-body">    <!-- Body-Modal -->
@@ -1082,6 +1091,7 @@
                         <img src="./source/Chilango_Street_logo.jpg" alt="Chilango-Logo" width="40" height="40" class="rounded-3 me-2">
                     </div>
                     <h1>Papas a la Francesa:</h1>
+                    <button type="reset" class="btn-close bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
 
                 <div class="modal-body">    <!-- Body-Modal -->
@@ -1158,6 +1168,7 @@
                         <img src="./source/Chilango_Street_logo.jpg" alt="Chilango-Logo" width="40" height="40" class="rounded-3 me-2">
                     </div>
                     <h1>Gelatinas y Flanes:</h1>
+                    <button type="reset" class="btn-close bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
 
                 <div class="modal-body">    <!-- Body-Modal -->
@@ -1220,6 +1231,7 @@
                         <img src="./source/Chilango_Street_logo.jpg" alt="Chilango-Logo" width="40" height="40" class="rounded-3 me-2">
                     </div>
                     <h1>Agua del Dia:</h1>
+                    <button type="reset" class="btn-close bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
 
                 <div class="modal-body">    <!-- Body-Modal -->
@@ -1279,6 +1291,7 @@
                         <img src="./source/Chilango_Street_logo.jpg" alt="Chilango-Logo" width="40" height="40" class="rounded-3 me-2">
                     </div>
                     <h1>Refrescos:</h1>
+                    <button type="reset" class="btn-close bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
 
                 <div class="modal-body">    <!-- Body-Modal -->
@@ -1338,6 +1351,7 @@
                         <img src="./source/Chilango_Street_logo.jpg" alt="Chilango-Logo" width="40" height="40" class="rounded-3 me-2">
                     </div>
                     <h1>Boing:</h1>
+                    <button type="reset" class="btn-close bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
 
                 <div class="modal-body">    <!-- Body-Modal -->
@@ -1475,50 +1489,50 @@
                         <div class="d-flex justify-content-between">
                             <div class="botton-left-area ms-2">
                                 <ul class="left-list list-unstyled">
-                                    <li class="fs-5">
-                                        LUNES
+                                    <li>
+                                      LUNES
                                     </li>
-                                    <li class="fs-5 my-1">
+                                    <li class="my-2">
                                         MARTES
                                     </li>
-                                    <li class="fs-5 my-1">
+                                    <li class="my-2">
                                         MIERCOLES
                                     </li>
-                                    <li class="fs-5 my-1">
+                                    <li class="my-2">
                                         JUEVES
                                     </li>
-                                    <li class="fs-5 my-1">
+                                    <li class="my-2">
                                         VIERNES
                                     </li>
-                                    <li class="fs-5 my-1">
+                                    <li class="my-2">
                                         SABADO
                                     </li>
-                                    <li class="fs-5 my-1">
+                                    <li class="my-2">
                                         DOMINGO
                                     </li>
                                 </ul>
                             </div>
                             <div class="botton-right-area me-2">
                                 <ul class="right-list list-unstyled">
-                                    <li class="fs-5 ms-3">
+                                    <li class="ms-3">
                                         CERRADO
                                     </li>
-                                    <li class="fs-5 my-1">
+                                    <li class="my-2">
                                         Estadio Xalapeño
                                     </li>
-                                    <li class="fs-5 my-1">
+                                    <li class="my-2">
                                         Parque Juarez
                                     </li>
-                                    <li class="fs-5 my-1">
+                                    <li class="my-2">
                                         Mercado de San José
                                     </li>
-                                    <li class="fs-5 my-1">
+                                    <li class="my-2">
                                         Plaza Xanath
                                     </li>
-                                    <li class="fs-5 my-1">
+                                    <li class="my-2">
                                         Los Berros
                                     </li>
-                                    <li class="fs-5 my-1">
+                                    <li class="my-2">
                                         Los Lagos
                                     </li>
                                 </ul>
@@ -1529,50 +1543,50 @@
                         <div class="d-flex justify-content-between">
                             <div class="botton-left-area ms-2">
                                 <ul class="left-list list-unstyled">
-                                    <li class="fs-5">
+                                    <li >
                                         LUNES
                                     </li>
-                                    <li class="fs-5 my-1">
+                                    <li class=" my-2">
                                         MARTES
                                     </li>
-                                    <li class="fs-5 my-1">
+                                    <li class=" my-2">
                                         MIERCOLES
                                     </li>
-                                    <li class="fs-5 my-1">
+                                    <li class=" my-2">
                                         JUEVES
                                     </li>
-                                    <li class="fs-5 my-1">
+                                    <li class=" my-2">
                                         VIERNES
                                     </li>
-                                    <li class="fs-5 my-1">
+                                    <li class=" my-2">
                                         SABADO
                                     </li>
-                                    <li class="fs-5 my-1">
+                                    <li class=" my-2">
                                         DOMINGO
                                     </li>
                                 </ul>
                             </div>
                             <div class="botton-right-area me-2">
                                 <ul class="right-list list-unstyled">
-                                    <li class="fs-5 ms-3 fw-bold">
+                                    <li class="ms-2 fw-bold">
                                         CERRADO
                                     </li>
-                                    <li class="fs-5 my-1 fw-bold">
+                                    <li class="my-2 fw-bold">
                                         12:00 PM - 6:00 PM
                                     </li>
-                                    <li class="fs-5 my-1 fw-bold">
+                                    <li class="my-2 fw-bold">
                                         12:00 PM - 6:00 PM
                                     </li>
-                                    <li class="fs-5 my-1 fw-bold">
+                                    <li class="my-2 fw-bold">
                                         12:00 PM - 6:00 PM
                                     </li>
-                                    <li class="fs-5 my-1 fw-bold">
+                                    <li class="my-2 fw-bold">
                                         3:00 PM - 11:00 PM
                                     </li>
-                                    <li class="fs-5 my-1 fw-bold">
+                                    <li class="my-2 fw-bold">
                                         3:00 PM - 11:00 PM
                                     </li>
-                                    <li class="fs-5 my-1 fw-bold">
+                                    <li class="my-2 fw-bold">
                                         3:00 PM - 11:00 PM
                                     </li>
                                 </ul>
