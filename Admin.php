@@ -11,7 +11,7 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oldenburg&display=swap" rel="stylesheet">
 </head>
 <body class="main-page">
     
@@ -26,7 +26,7 @@
                     <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z" />
                 </svg>
                 <!--Modificar span Respecto al Horario-->
-                <span class="Actividad mx-2" name="Horario">Abierto</span>
+                <span class="Actividad mx-2" name="Horario"></span>
 
                 <!-- Cambiar a Color verde el icono al Abrir y Cambiar a Rojo al Cerrar-->
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="green" class="Actividad bi bi-record-circle" viewBox="0 0 16 16" name="icono-actividad">
@@ -41,7 +41,7 @@
             <!-- Logo y Titulo -->
             <div class="left-area-logo">
                 <div class="logo-img-area">
-                    <img src="./source/Chilango_Street_logo.jpg" class="logo-bottom-img rounded-3" alt="Logo">
+                    <img src="./source/Chilango_Street_logo.jpg" class="logo-bottom-img" alt="Logo">
                 </div>
                 <div class="logo-text-area mt-3">
                     <h1 class="Titulo">Chilango'Street</h1>
@@ -61,11 +61,11 @@
     <div class="container-md">
     <!-- Filtrar Productos por Categoria al Principio de Pagina -->
         <ul class="nav fs-4 d-flex justify-content-center">
-            <li>
+            <li class="my-2">
                 <a class="p-3 nav-item rounded-bottom-4">CREAR PROD.</a>
             </li>
-            <li>
-                <a class="p-3 nav-item rounded-bottom-4">ELIMINAR PROD.</a>
+            <li class="my-2">
+                <a class="p-3 nav-item rounded-bottom-4 ">ELIMINAR PROD.</a>
             </li>
         </ul>
         <hr>
@@ -77,51 +77,29 @@
         <!-- Categoria: Tacos  Formato de Filas de 2 columnas-->
         <div id="Menu-Tacos" class="container my-2">
             <!-- Titulo de Categoria -->
-            <div class="Categoria p-4 rounded-5">
-                <h4>TACOS:<span name="Precio" class="Precio fw-bold fs-2" id="Precio-Tacos"> 22 </span>MXN</h4>
+            <div class="Categoria p-4 rounded-4">
+                <h2>Tacos</h2>
             </div>
 
             <div class="container my-2">
                 <div class="row">
                     <!-- 100% en Celular y 50% en Superiores -->
-                    <div class="col-12 col-md-6 pe-2 my-2">
+                    <div class="col-12 my-2">
                         <div class="Tacos">
                             <div class="container-fluid">
                                 <div class="row">
                                     <!-- Producto usando 100% del espacio -->
-                                    <div class="col-12 d-flex p-3">
+                                    <div class="col-12 d-flex p-3 my-2">
                                         <img src="./source//MENU/Tacos.jpg.png" alt="Tacos" class="Tacos-Menu rounded-5" width="150px" height="170px">
                                         <div class="Descripcion px-3">
                                             <h3>Tacos</h3>
                                             <hr>
-                                            <p class="Descripcion fs-5">Proteína de tu elección, cebolla caramelizada, nopales y papas fritas</p>
+                                            <p class="Descripcion fs-5  my-auto">Proteína de tu elección, cebolla caramelizada, nopales y papas fritas</p>
                                         </div>
                                     </div>
                                     <!-- Boton (Modal)-->
-                                    <div class="col-12 text-center p-3">
+                                    <div class="col-12 text-center p-3 my-auto">
                                         <a role="button" id="btn-Tacos-1" class="btn-mod" data-bs-toggle="modal" data-bs-target="#M-Mod-Tacos-1">MODIFICAR</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- 100% en Celular y 50% en Superiores -->
-                    <div class="col-12 col-md-6 d-flex ps-2 my-2">
-                        <div class="Extras">
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <!-- Producto usando 100% del espacio -->
-                                    <div class="col-12 d-flex p-3">
-                                        <img src="./source//MENU/postres.webp" alt="Postres" class="Extras-Menu rounded-5" width="150px" height="170px">
-                                        <div class="Descripcion px-3">
-                                            <h3>Extras</h3>
-                                            <hr>
-                                            <p class="Descripcion fs-5">Postres y Complementos</p>
-                                        </div>
-                                    </div>
-                                    <!-- Boton (Lleva a Categoria: Extras)-->
-                                    <div class="col-12 text-center p-3">
-                                        <a role="button" href="#Menu-Extras" id="btn-Postres-1" class="btn-mod">MODIFICAR</a>
                                     </div>
                                 </div>
                             </div>
@@ -134,8 +112,8 @@
         <!-- Categoria: Tortas Formato de Filas de 2 Columnas -->
         <div id="Menu-Tortas" class="container my-2">
             <!-- Titulo de Categoria -->
-            <div class="Categoria p-4 rounded-5">
-                <h4>TORTAS:<span name="Precio" class="Precio fw-bold fs-2" id="Precio-Tortas"> 25</span> MXN</h4>
+            <div class="Categoria p-4 rounded-4">
+                <h2>Tortas</h2>
             </div>
 
             <div class="container my-2">
@@ -146,16 +124,16 @@
                             <div class="container-fluid">
                                 <div class="row">
                                     <!-- Producto usando 100% del espacio -->
-                                    <div class="col-12 d-flex p-3">
+                                    <div class="col-12 d-flex p-3 my-2">
                                         <img src="./source//MENU/tortas1.jpg.png" alt="Torta1" class="Tortas-Menu rounded-5" width="150px" height="170px">
                                         <div class="Descripcion px-3">
                                             <h3>Torta Sencilla</h3>
                                             <hr>
-                                            <p class="Descripcion fs-5">Proteína de tu elección, mayonesa, frijoles, jitomate y cebolla caramelizada</p>
+                                            <p class="Descripcion fs-5 my-auto">Proteína de tu elección, mayonesa, frijoles, jitomate y cebolla caramelizada</p>
                                         </div>
                                     </div>
                                     <!-- Boton (Modal)-->
-                                    <div class="col-12 text-center p-3">
+                                    <div class="col-12 text-center p-3 my-auto">
                                         <a role="button" href="#0" id="btn-Tortas-1" class="btn-mod" style="max-height : 40px;" data-bs-toggle="modal" data-bs-target="#M-Mod-Tortas-1">MODIFICAR</a>
                                     </div>
                                 </div>
@@ -168,15 +146,15 @@
                             <div class="container-fluid">
                                 <div class="row">
                                     <!-- Producto usando 100% del espacio -->
-                                    <div class="col-12 d-flex p-3">
+                                    <div class="col-12 d-flex p-3 my-auto">
                                         <img src="./source//MENU/tortas2.jpg.png" alt="Torta2" class="Tortas-Menu rounded-5" width="150px" height="170px">
                                         <div class="Descripcion px-3">
                                             <h3>Gorditas</h3>
                                             <hr>
-                                            <p class="Descripcion fs-5">Tortilla de masa gruesa rellena de chicharrón + proteína de tu elección, lechuga, queso y crema</p>
+                                            <p class="Descripcion fs-5 my-auto">Tortilla de masa gruesa rellena de chicharrón + proteína de tu elección, lechuga, queso y crema</p>
                                         </div>
                                     </div>
-                                    <div class="col-12 text-center p-3">
+                                    <div class="col-12 text-center p-3 my-auto">
                                         <a role="button" href="#0" id="btn-Tortas-2" class="btn-mod" style="max-height : 40px;" data-bs-toggle="modal" data-bs-target="#M-Mod-Tortas-2">MODIFICAR</a>
                                     </div>
                                 </div>
@@ -189,16 +167,16 @@
                             <div class="container-fluid">
                                 <div class="row">
                                     <!-- Producto usando 100% del espacio -->
-                                    <div class="col-12 d-flex p-3">
+                                    <div class="col-12 d-flex p-3 my-auto">
                                         <img src="./source//MENU/Tortas3.jpg.png" alt="Torta3" class="Tortas-Menu rounded-5" width="150px" height="170px">
                                         <div class="Descripcion px-3">
                                             <h3>Pambazo</h3>
                                             <hr>
-                                            <p class="Descripcion fs-5">Pan asado con salsa de chiles secos, relleno de papa con longaniza + proteína de tu elección, lechuga, queso y crema</p>
+                                            <p class="Descripcion fs-5 my-auto">Pan asado con salsa de chiles secos, relleno de papa con longaniza + proteína de tu elección, lechuga, queso y crema</p>
                                         </div>
                                     </div>
                                     <!-- Boton (Modal)-->
-                                    <div class="col-12 text-center p-3">
+                                    <div class="col-12 text-center p-3 my-auto">
                                         <a role="button" href="#0" id="btn-Tortas-3" class="btn-mod" style="max-height : 40px;" data-bs-toggle="modal" data-bs-target="#M-Mod-Tortas-3">MODIFICAR</a>
                                     </div>
                                 </div>
@@ -211,15 +189,15 @@
                             <div class="container-fluid">
                                 <div class="row">
                                     <!-- Producto usando 100% del espacio -->
-                                    <div class="col-12 d-flex p-3">
+                                    <div class="col-12 d-flex p-3 my-2">
                                         <img src="./source//MENU/Tortas4.jpg.png" alt="Torta4" class="Tortas-Menu rounded-5" width="150px" height="170px">
                                         <div class="Descripcion px-3">
                                             <h3>Huarache</h3>
                                             <hr>
-                                            <p class="Descripcion fs-5">Tortilla alargada con frijoles, proteína de tu elección, nopales, queso y crema</p>
+                                            <p class="Descripcion fs-5 my-auto">Tortilla alargada con frijoles, proteína de tu elección, nopales, queso y crema</p>
                                         </div>
                                     </div>
-                                    <div class="col-12 text-center p-3 mt-4">
+                                    <div class="col-12 text-center pt-3 my-4">
                                         <a role="button" href="#0" id="btn-Tortas-4" class="btn-mod" style="max-height : 40px;" data-bs-toggle="modal" data-bs-target="#M-Mod-Tortas-4">MODIFICAR</a>
                                     </div>
                                 </div>
@@ -233,8 +211,8 @@
         <!-- Categoria: Extras Formato de 2 columnas-->
         <div id="Menu-Extras" class="container my-2">
             <!-- Titulo de Categoria -->
-            <div class="Categoria p-4 rounded-5">
-                <h4>EXTRAS</h4>
+            <div class="Categoria p-4 rounded-4">
+                <h2>Extras</h2>
             </div>
 
             <div class="container my-2">
@@ -270,11 +248,11 @@
                                         <h3>Postres</h3>
                                         <hr>
                                         <img src="./source//MENU/postres.webp" alt="Postres" class="Extras-Menu rounded-5" width="200px" height="200px">
-                                        <p class="Descripcion fs-5 my-3">Yugurt con Gelatina y Flan</p>
+                                        <p class="Descripcion fs-5 my-4">Yugurt con Gelatina y Flan</p>
                                         <h6 class="fst-italic"><span name="Precio" class="Precio fw-bold fs-5" id="Precio-Postres">25</span> MXN</h6>
                                     </div>
                                     <!-- Boton (Modal)-->
-                                    <div class="col-12 text-center p-3">
+                                    <div class="col-12 text-center p-3 mt-3">
                                         <a role="button" href="#0" id="btn-Extras-2" class="btn-mod" style="max-height : 40px;" data-bs-toggle="modal" data-bs-target="#M-Mod-Extras-2">MODIFICAR</a>
                                     </div>
                                 </div>
@@ -288,8 +266,8 @@
         <!-- Categoria: Bebidas Formato de 3 columnas-->
         <div id="Menu-Bebidas" class="container my-2">
             <!-- Titulo de Categoria -->
-            <div class="Categoria p-4 rounded-5">
-                <h4>BEBIDAS:<span name="Precio" class="Precio fw-bold fs-2" id="Precio-Bebidas"> 25</span> MXN</h4>
+            <div class="Categoria p-4 rounded-4">
+                <h2>Bebidas</h2>
             </div>
 
             <div class="container my-2">
@@ -305,6 +283,7 @@
                                         <hr>
                                         <img src="./source//MENU/agua_del_dia.avif" alt="Agua del Dia" class="Bebidas-Menu rounded-3" width="200px" height="200px">
                                         <p class="Descripcion fs-5 my-2">Agua del Dia (500 ml)</p>
+                                        
                                     </div>
                                     <!-- Boton (Modal)-->
                                     <div class="col-12 text-center my-2">
@@ -362,15 +341,15 @@
     <!-- Footer: Regresar a Bienvenida e Info -->
     <footer class="mt-2 rounded-top-4">
         <div class="container-fluid text-center">
-            <div class="row mx-2">
+            <div class="row mx-auto">
                 <!-- 100% en Celular y 10% en Superiores -->
-                <div class="col-12 col-md-2 my-1 mx-3">
+                <div class="col-12 col-md-2 my-1 mx-auto">
                     <div class="footer-item p-2">
-                        <a role="button" href="Bienvenida.php" id="btn-footer-Inicio" class="btn-footer">Bienvenida</a>
+                        <a role="button" href="Bienvenida.php" id="btn-footer-Inicio" class="btn-footer">Cerrar Sesion</a>
                     </div>
                 </div>
                 <!-- 100% en Celular y 10% en Superiores -->
-                 <div class="col-12 col-md-2 my-1 mx-3 ms-auto">
+                 <div class="col-12 col-md-2 my-1 mx-auto">
                         <div class="footer-item p-2">
                             <span>Copyright ©</span>
                         </div>
@@ -422,8 +401,8 @@
                 </div>
 
                 <div class="modal-footer">  <!-- Footer-Modal -->
-                    <input type="number" placeholder="CANTIDAD" id="cantidad">
-                     <button type="submit" class="btn btn-primary" id="Agregar-Cambios">Aceptar</button>
+                    <input type="number" placeholder="CANTIDAD" class="cantidad">
+                     <button type="submit" class="btn btn-primary btn-agregar" id="Agregar-Cambios">Aceptar</button>
                 </div>
             </div>
         </div>
@@ -472,8 +451,8 @@
                 </div>
 
                 <div class="modal-footer">  <!-- Footer-Modal -->
-                    <input type="number" placeholder="CANTIDAD" id="cantidad">
-                     <button type="submit" class="btn btn-primary" id="Agregar-Cambios">Aceptar</button>
+                    <input type="number" placeholder="CANTIDAD" class="cantidad">
+                     <button type="submit" class="btn btn-primary btn-agregar" id="Agregar-Cambios">Aceptar</button>
                 </div>
             </div>
         </div>
@@ -522,8 +501,8 @@
                 </div>
 
                 <div class="modal-footer">  <!-- Footer-Modal -->
-                    <input type="number" placeholder="CANTIDAD" id="cantidad">
-                     <button type="submit" class="btn btn-primary" id="Agregar-Cambios">Aceptar</button>
+                    <input type="number" placeholder="CANTIDAD" class="cantidad">
+                     <button type="submit" class="btn btn-primary btn-agregar" id="Agregar-Cambios">Aceptar</button>
                 </div>
             </div>
         </div>
@@ -572,8 +551,8 @@
                 </div>
 
                 <div class="modal-footer">  <!-- Footer-Modal -->
-                    <input type="number" placeholder="CANTIDAD" id="cantidad">
-                     <button type="submit" class="btn btn-primary" id="Agregar-Cambios">Aceptar</button>
+                    <input type="number" placeholder="CANTIDAD" class="cantidad">
+                     <button type="submit" class="btn btn-primary btn-agregar" id="Agregar-Cambios">Aceptar</button>
                 </div>
             </div>
         </div>
@@ -622,8 +601,8 @@
                 </div>
 
                 <div class="modal-footer">  <!-- Footer-Modal -->
-                    <input type="number" placeholder="CANTIDAD" id="cantidad">
-                     <button type="submit" class="btn btn-primary" id="Agregar-Cambios">Aceptar</button>
+                    <input type="number" placeholder="CANTIDAD" class="cantidad">
+                     <button type="submit" class="btn btn-primary btn-agregar" id="Agregar-Cambios">Aceptar</button>
                 </div>
             </div>
         </div>
@@ -672,8 +651,8 @@
                 </div>
 
                 <div class="modal-footer">  <!-- Footer-Modal -->
-                    <input type="number" placeholder="CANTIDAD" id="cantidad">
-                     <button type="submit" class="btn btn-primary" id="Agregar-Cambios">Aceptar</button>
+                    <input type="number" placeholder="CANTIDAD" class="cantidad">
+                     <button type="submit" class="btn btn-primary btn-agregar" id="Agregar-Cambios">Aceptar</button>
                 </div>
             </div>
         </div>
@@ -739,8 +718,8 @@
                 </div>
 
                 <div class="modal-footer">  <!-- Footer-Modal -->
-                    <input type="number" placeholder="CANTIDAD" id="cantidad">
-                     <button type="submit" class="btn btn-primary" id="Agregar-Cambios">Aceptar</button>
+                    <input type="number" placeholder="CANTIDAD" class="cantidad">
+                     <button type="submit" class="btn btn-primary btn-agregar" id="Agregar-Cambios">Aceptar</button>
                 </div>
             </div>
         </div>
@@ -803,8 +782,8 @@
                 </div>
 
                 <div class="modal-footer">  <!-- Footer-Modal -->
-                    <input type="number" placeholder="CANTIDAD" id="cantidad">
-                     <button type="submit" class="btn btn-primary" id="Agregar-Cambios">Aceptar</button>
+                    <input type="number" placeholder="CANTIDAD" class="cantidad">
+                     <button type="submit" class="btn btn-primary btn-agregar" id="Agregar-Cambios">Aceptar</button>
                 </div>
             </div>
         </div>
@@ -867,8 +846,8 @@
                 </div>
 
                 <div class="modal-footer">  <!-- Footer-Modal -->
-                    <input type="number" placeholder="CANTIDAD" id="cantidad">
-                     <button type="submit" class="btn btn-primary" id="Agregar-Cambios">Aceptar</button>
+                    <input type="number" placeholder="CANTIDAD" class="cantidad">
+                     <button type="submit" class="btn btn-primary btn-agregar" id="Agregar-Cambios">Aceptar</button>
                 </div>
             </div>
         </div>
@@ -931,8 +910,8 @@
                 </div>
 
                 <div class="modal-footer">  <!-- Footer-Modal -->
-                    <input type="number" placeholder="CANTIDAD" id="cantidad">
-                     <button type="submit" class="btn btn-primary" id="Agregar-Cambios">Aceptar</button>
+                    <input type="number" placeholder="CANTIDAD" class="cantidad">
+                     <button type="submit" class="btn btn-primary btn-agregar" id="Agregar-Cambios">Aceptar</button>
                 </div>
             </div>
         </div>
@@ -971,8 +950,15 @@
         </div>
     </div>
 
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Sweet Alert JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- Boostrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JavaScript -->
+    <script src="./JS/Negocio.js"></script>
+    <script src="./JS/Cantidad.js"></script>
 </body>
 
 </html>

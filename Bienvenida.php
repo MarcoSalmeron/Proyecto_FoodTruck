@@ -12,11 +12,10 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oldenburg&display=swap" rel="stylesheet">
 </head>
 
 <body>
-
     <div class="Main-Page">
         <!-- Header -->
         <header class="Main-Header container rounded-bottom-4 mb-3">
@@ -24,15 +23,20 @@
             <div class="image-top-section mb-1">
                 <!-- Boton (Modal)-->
 <<<<<<< HEAD
+<<<<<<< HEAD
                 <button type="button" data-bs-toggle="modal" data-bs-target="#Horario" class="btn-top-header me-2 p-1" id="btn-top-Horario">
 =======
                 <button type="button" data-bs-toggle="modal" data-bs-target="#Horario" class="btn-top-header me-3 p-1" id="btn-top-Horario">
 >>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
+=======
+                <button type="button" data-bs-toggle="modal" data-bs-target="#Horario" class="btn-top-header me-3 p-1" id="btn-top-Horario">
+>>>>>>> main
                     <!-- Logo de Reloj -->
                     <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-clock-fill" viewBox="0 0 16 16">
                         <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z" />
                     </svg>
                     <!--Modificar span Respecto al Horario-->
+<<<<<<< HEAD
 <<<<<<< HEAD
                     <span class="Actividad mx-2" name="Horario">Abierto</span>
 
@@ -44,30 +48,46 @@
                     <!-- Cambiar a Color verde el icono al Abrir y Cambiar a Rojo al Cerrar-->
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="red" class="Actividad bi bi-record-circle" viewBox="0 0 16 16" name="icono-actividad">
 >>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
+=======
+                    <span class="Actividad mx-2" name="Horario"></span>
+
+                    <!-- Cambiar a Color verde el icono al Abrir y Cambiar a Rojo al Cerrar-->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="red" class="Actividad bi bi-record-circle" viewBox="0 0 16 16" name="icono-actividad">
+>>>>>>> main
                         <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
                         <path d="M11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
                     </svg>
                 </button>
                 <img src="./source/Header-2.png" alt="img-top-header" class="img-main-header rounded-bottom-2">
             </div>
-            <div class="logo-bottom-section mt-1">
+            <div class="logo-bottom-section mt-1 d-flex justify-content-between">
                 <!-- Logo y Titulo -->
                 <div class="left-area-logo">
                     <div class="logo-img-area">
-                        <img src="./source/Chilango_Street_logo.jpg" class="logo-bottom-img rounded-3" alt="Logo">
+                        <img src="./source/Chilango_Street_logo.jpg" class="logo-bottom-img" alt="Logo">
                     </div>
-                    <div class="logo-text-area mt-3 ps-3">
-                        <span class="fst-italic fw-bold">"¡Sabor que embriaga, antojos que conquistan!"</span>
+                    <div class="logo-text-area mt-3 ps-2">
+                        <span class="fst-italic fw-bold fs-5">"¡Sabor que embriaga, antojos que conquistan!"</span>
                     </div>
                 </div>
+                <!-- Icono para Login -->
+                <div class="right-area-logo">
+                    <button class="btn-login mt-4" id="top-btn-login">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-person-lines-fill" viewBox="0 0 16 16">
+                            <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5m.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1z" />
+                        </svg>
+                    </button>
+                </div>
             </div>
+
         </header>
 
         <!-- Main: Mostrar Info o ir al Menu -->
         <main>
+
             <div class="main-body container-fluid my-2">
                 <hr>
-                <div class="container-fluid my-2">
+                <div class="container-fluid ">
                     <div class="row">
                         <div class="col-12 col-md-6 pe-1 my-1">
                             <!-- Mostrar Bienvenida y Ubicacion -->
@@ -89,19 +109,16 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-md-6 ps-3 my-1">
+                        <div class="col-12 col-md-6 ps-3 my-auto">
                             <!-- Redireccionar o Mostrar Modal -->
                             <div class="body-right-area">
                                 <div class="container-fluid">
                                     <div class="row">
-                                        <div class="col-12 text-center p-3 my-1 nav-item">
-                                            <a href="Menu.php">Hacer Pedido | Ver Menu</a>
+                                        <div class="col-12 text-center p-3 my-2 nav-item">
+                                            <a href="Menu.php" class="nav-item">Hacer Pedido | Ver Menu</a>
                                         </div>
-                                        <div class="col-12 text-center p-3 my-1 nav-item">
+                                        <div class="col-12 text-center p-3 my-2 nav-item">
                                             <a data-bs-toggle="modal" data-bs-target="#Horario">Servicios</a>
-                                        </div>
-                                        <div class="col-12 text-center p-3 my-1 nav-item">
-                                            <a href="Login.php">Administracion</a>
                                         </div>
                                     </div>
                                 </div>
@@ -117,6 +134,7 @@
         <footer class="mt-3 rounded-top-4">
             <div class="container-fluid text-center">
 <<<<<<< HEAD
+<<<<<<< HEAD
                 <div class="row mx-2">
                     <!-- 100% en Celular y 10% en Superiores -->
                     <div class="col-12 col-md-2 my-1 mx-2">
@@ -125,10 +143,16 @@
                     <!-- 100% en Celular y 10% en Superiores -->
                     <div class="col-12 col-md-2 my-1 mx-auto">
 >>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
+=======
+                <div class="row mx-5">
+                    <!-- 100% en Celular y 10% en Superiores -->
+                    <div class="col-12 col-md-2 my-1 mx-auto">
+>>>>>>> main
                         <div class="footer-item">
                             <a role="button" href="Menu.php" id="btn-footer-Menu" class="btn btn-footer">Menu Digital</a>
                         </div>
                     </div>
+<<<<<<< HEAD
 <<<<<<< HEAD
                     <!-- 100% en Celular y 10% en Superiores -->
                     <div class="col-12 col-md-2 my-1 mx-2">
@@ -141,6 +165,15 @@
                     <!-- 100% en Celular y 10% en Superiores -->
                     <div class="col-12 col-md-2 my-1 mx-auto">
 >>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
+=======
+                    <div class="col-12 col-md-2 my-1 mx-auto">
+                        <div class="footer-item p-2">
+                            <span>Copyright ©</span>
+                        </div>
+                    </div>
+                    <!-- 100% en Celular y 10% en Superiores -->
+                    <div class="col-12 col-md-2 my-1 mx-auto">
+>>>>>>> main
                         <div class="footer-item">
                             <a type="button" class="btn btn-footer" data-bs-toggle="modal" data-bs-target="#Horario">
                                 Horario
@@ -148,6 +181,7 @@
                         </div>
                     </div>
 <<<<<<< HEAD
+<<<<<<< HEAD
                     <div class="col-12 col-md-2 my-1 mx-2">
                         <div class="footer-item p-2">
                             <span>Copyright ©</span>
@@ -155,12 +189,14 @@
                     </div>
 =======
 >>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
+=======
+>>>>>>> main
                 </div>
             </div>
         </footer>
 
     </div>
-    
+
     <!-- Modal NEGOCIO -->
     <div class="modal fade" id="Horario" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -180,7 +216,7 @@
                             <div class="container">
                                 <span class="fw-bold">Chilango'Street:</span>
                                 <div class="container">
-                                    <span class="fs-5">"Cocina en movimiento por la ciudad de Xalapa como referente de los antojitos chilangos, creado con bajos costos para el mayor alcance de la población  en cualquier lugar y cualquier momento"</span>
+                                    <span class="fs-5">"Cocina en movimiento por la ciudad de Xalapa como referente de los antojitos chilangos, creado con bajos costos para el mayor alcance de la población en cualquier lugar y cualquier momento"</span>
                                 </div>
                             </div>
                         </div>
@@ -249,51 +285,51 @@
                         <div class="d-flex justify-content-between">
                             <div class="botton-left-area ms-2">
                                 <ul class="left-list list-unstyled">
-                                    <li class="fs-5">
+                                    <li class="">
                                         LUNES
                                     </li>
-                                    <li class="fs-5 my-1">
-                                        MARTES 
+                                    <li class=" my-2">
+                                        MARTES
                                     </li>
-                                    <li class="fs-5 my-1">
-                                        MIERCOLES 
+                                    <li class=" my-2">
+                                        MIERCOL.
                                     </li>
-                                    <li class="fs-5 my-1">
-                                        JUEVES 
+                                    <li class=" my-2">
+                                        JUEVES
                                     </li>
-                                    <li class="fs-5 my-1">
-                                        VIERNES 
+                                    <li class=" my-2">
+                                        VIERNES
                                     </li>
-                                    <li class="fs-5 my-1">
-                                        SABADO 
+                                    <li class=" my-2">
+                                        SABADO
                                     </li>
-                                    <li class="fs-5 my-1">
-                                        DOMINGO 
+                                    <li class=" my-2">
+                                        DOMINGO
                                     </li>
                                 </ul>
                             </div>
                             <div class="botton-right-area me-2">
                                 <ul class="right-list list-unstyled">
-                                    <li class="fs-5 ms-3">
+                                    <li class="ms-3">
                                         CERRADO
                                     </li>
-                                    <li class="fs-5 my-1">
-                                        Estadio Xalapeño 
+                                    <li class="my-2">
+                                        Estadio Xalapeño
                                     </li>
-                                    <li class="fs-5 my-1">
-                                        Parque Juarez 
+                                    <li class="my-2">
+                                        Parque Juarez
                                     </li>
-                                    <li class="fs-5 my-1">
-                                        Mercado de San José 
+                                    <li class="my-2">
+                                        Mercado de San José
                                     </li>
-                                    <li class="fs-5 my-1">
-                                        Plaza Xanath 
+                                    <li class="my-2">
+                                        Plaza Xanath
                                     </li>
-                                    <li class="fs-5 my-1">
-                                        Los Berros 
+                                    <li class="my-2">
+                                        Los Berros
                                     </li>
-                                    <li class="fs-5 my-1">
-                                        Los Lagos 
+                                    <li class="my-2">
+                                        Los Lagos
                                     </li>
                                 </ul>
                             </div>
@@ -303,50 +339,50 @@
                         <div class="d-flex justify-content-between">
                             <div class="botton-left-area ms-2">
                                 <ul class="left-list list-unstyled">
-                                    <li class="fs-5">
-                                        LUNES
+                                    <li>
+                                       LUNES
                                     </li>
-                                    <li class="fs-5 my-1">
-                                        MARTES 
+                                    <li class="my-2">
+                                        MARTES
                                     </li>
-                                    <li class="fs-5 my-1">
-                                        MIERCOLES 
+                                    <li class="my-2">
+                                        MIERCOL.
                                     </li>
-                                    <li class="fs-5 my-1">
+                                    <li class="my-2">
                                         JUEVES
                                     </li>
-                                    <li class="fs-5 my-1">
+                                    <li class="my-2">
                                         VIERNES
                                     </li>
-                                    <li class="fs-5 my-1">
+                                    <li class="my-2">
                                         SABADO
                                     </li>
-                                    <li class="fs-5 my-1">
+                                    <li class="my-2">
                                         DOMINGO
                                     </li>
                                 </ul>
                             </div>
                             <div class="botton-right-area me-2">
                                 <ul class="right-list list-unstyled">
-                                    <li class="fs-5 ms-3 fw-bold">
+                                    <li class="ms-3 fw-bold">
                                         CERRADO
                                     </li>
-                                    <li class="fs-5 my-1 fw-bold">
+                                    <li class="my-2 fw-bold">
                                         12:00 PM - 6:00 PM
                                     </li>
-                                    <li class="fs-5 my-1 fw-bold">
+                                    <li class="my-2 fw-bold">
                                         12:00 PM - 6:00 PM
                                     </li>
-                                    <li class="fs-5 my-1 fw-bold">
+                                    <li class="my-2 fw-bold">
                                         12:00 PM - 6:00 PM
                                     </li>
-                                    <li class="fs-5 my-1 fw-bold">
+                                    <li class="my-2 fw-bold">
                                         3:00 PM - 11:00 PM
                                     </li>
-                                    <li class="fs-5 my-1 fw-bold">
+                                    <li class="my-2 fw-bold">
                                         3:00 PM - 11:00 PM
                                     </li>
-                                    <li class="fs-5 my-1 fw-bold">
+                                    <li class="my-2 fw-bold">
                                         3:00 PM - 11:00 PM
                                     </li>
                                 </ul>
@@ -363,6 +399,7 @@
     </div>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 =======
     <!-- Boostrap -->
@@ -370,6 +407,15 @@
     <!-- javaScript -->
      <script src="./JS/Negocio.js"></script>
 >>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
+=======
+    <!-- Boostrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Sweet Alert.js -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- javaScript -->
+    <script src="./JS/Negocio.js"></script>
+
+>>>>>>> main
 </body>
 
 </html>

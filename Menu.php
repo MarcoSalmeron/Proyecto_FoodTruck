@@ -12,7 +12,9 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oldenburg&display=swap" rel="stylesheet">
+    
+
     
 </head>
 
@@ -28,10 +30,10 @@
                     <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z" />
                 </svg>
                 <!--Modificar span Respecto al Horario-->
-                <span class="Actividad mx-2" name="Horario">Abierto</span>
+                <span class="Actividad mx-2" name="Horario"></span>
 
                 <!-- Cambiar a Color verde el icono al Abrir y Cambiar a Rojo al Cerrar-->
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="green" class="Actividad bi bi-record-circle" viewBox="0 0 16 16" name="icono-actividad">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="red" class="Actividad bi bi-record-circle" viewBox="0 0 16 16" name="icono-actividad">
                     <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
                     <path d="M11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
                 </svg>
@@ -43,7 +45,7 @@
             <!-- Logo y Titulo -->
             <div class="left-area-logo">
                 <div class="logo-img-area">
-                    <img src="./source/Chilango_Street_logo.jpg" class="logo-bottom-img rounded-3" alt="Logo">
+                    <img src="./source/Chilango_Street_logo.jpg" class="logo-bottom-img" alt="Logo">
                 </div>
                 <div class="logo-text-area mt-3">
                     <h1 class="Titulo">Chilango'Street</h1>
@@ -62,17 +64,17 @@
     <!-- Navegacion de Categoria -->
     <div class="container-md">
         <!-- Filtrar Productos por Categoria al Principio de Pagina -->
-        <ul class="nav fs-4 d-flex justify-content-center">
-            <li>
+        <ul class="nav fs-4">
+            <li class="my-2 mx-auto">
                 <a class="p-3 nav-item rounded-bottom-4" href="#Menu-Tacos">Tacos</a>
             </li>
-            <li>
-                <a class="p-3 nav-item rounded-bottom-4" href="#Menu-Tortas">Tortas</a>
+            <li class="my-2 mx-auto">
+                <a class="p-3 nav-item rounded-bottom-4" href="#Menu-Tortas">Antojitos</a>
             </li>
-            <li>
+            <li class="my-2 mx-auto">
                 <a class="p-3 nav-item rounded-bottom-4" href="#Menu-Extras">Extras</a>
             </li>
-            <li>
+            <li class="my-2 mx-auto">
                 <a class="p-3 nav-item rounded-bottom-4" href="#Menu-Bebidas">Bebidas</a>
             </li>
         </ul>
@@ -85,14 +87,14 @@
         <!-- Categoria: Tacos  Formato de Filas de 2 columnas-->
         <div id="Menu-Tacos" class="container my-2">
             <!-- Titulo de Categoria -->
-            <div class="Categoria p-4 rounded-5 text-center">
-                <h4 >TACOS:<span name="Precio" class="Precio fw-bold fs-2" id="Precio-Tacos"> 22 </span>MXN</h4>
+            <div class="Categoria p-4 rounded-4 text-center">
+                <h2 >Tacos</h2>
             </div>
 
             <div class="container my-2">
                 <div class="row">
-                    <!-- 100% en Celular y 50% en Superiores -->
-                    <div class="col-12 col-md-6 pe-2 my-2">
+                    <!-- 100% del espacio (Unico Producto) -->
+                    <div class="col-12 my-2">
                         <div class="Tacos">
                             <div class="container-fluid">
                                 <div class="row">
@@ -107,29 +109,8 @@
                                     </div>
                                     <!-- Boton (Modal)-->
                                     <div class="col-12 text-center p-3">
-                                        <a role="button" href="#0" id="btn-Tacos-1" class="btn btn-ver" data-bs-toggle="modal" data-bs-target="#M-Tacos-1">Ver</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- 100% en Celular y 50% en Superiores -->
-                    <div class="col-12 col-md-6 d-flex ps-2 my-2">
-                        <div class="Extras">
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <!-- Producto usando 100% del espacio -->
-                                    <div class="col-12 d-flex p-3">
-                                        <img src="./source//MENU/postres.webp" alt="Postres" class="Extras-Menu rounded-5" width="150px" height="170px">
-                                        <div class="Descripcion px-3">
-                                            <h3>Extras</h3>
-                                            <hr>
-                                            <p class="Descripcion fs-5">Postres y Complementos</p>
-                                        </div>
-                                    </div>
-                                    <!-- Boton (Lleva a Categoria: Extras)-->
-                                    <div class="col-12 text-center p-3">
-                                        <a role="button" href="#Menu-Extras" id="btn-Postres-1" class="btn btn-ver">Ver</a>
+                                    <h6> <span class="Precio-Tacos fw-bold fs-5" id="Precio-Tacos">22</span> MXN</h6>
+                                        <a role="button" id="btn-Tacos-1" class="btn btn-ver" data-bs-toggle="modal" data-bs-target="#M-Tacos-1">Ver</a>
                                     </div>
                                 </div>
                             </div>
@@ -139,11 +120,11 @@
             </div>
         </div>
 
-        <!-- Categoria: Tortas Formato de Filas de 2 Columnas -->
+        <!-- Categoria: Antojitos Formato de Filas de 2 Columnas -->
         <div id="Menu-Tortas" class="container my-2">
             <!-- Titulo de Categoria -->
-            <div class="Categoria p-4 rounded-5">
-                <h4>TORTAS:<span name="Precio" class="Precio fw-bold fs-2" id="Precio-Tortas"> 25</span> MXN</h4>
+            <div class="Categoria p-4 rounded-4">
+                <h2>Antojitos</h2>
             </div>
 
             <div class="container my-2">
@@ -154,16 +135,17 @@
                             <div class="container-fluid">
                                 <div class="row">
                                     <!-- Producto usando 100% del espacio -->
-                                    <div class="col-12 d-flex p-3">
+                                    <div class="col-12 d-flex p-3 my-2">
                                         <img src="./source//MENU/tortas1.jpg.png" alt="Torta1" class="Tortas-Menu rounded-5" width="150px" height="170px">
                                         <div class="Descripcion px-3">
                                             <h3>Torta Sencilla</h3>
                                             <hr>
-                                            <p class="Descripcion fs-5">Proteína de tu elección, mayonesa, frijoles, jitomate y cebolla caramelizada</p>
+                                            <p class="Descripcion fs-5 my-auto">Proteína de tu elección, mayonesa, frijoles, jitomate y cebolla caramelizada</p>
                                         </div>
                                     </div>
                                     <!-- Boton (Modal)-->
-                                    <div class="col-12 text-center p-3">
+                                    <div class="col-12 text-center p-3 my-auto">
+                                        <p class="fs-5"> <span class="fs-3 fw-bold" id="Precio-Torta">25</span> MXN </p>
                                         <a role="button" id="btn-Tortas-1" class="btn btn-ver" style="max-height : 40px;"  data-bs-toggle="modal" data-bs-target="#M-Torta-1">Ver</a>
                                     </div>
                                 </div>
@@ -178,13 +160,14 @@
                                     <!-- Producto usando 100% del espacio -->
                                     <div class="col-12 d-flex p-3">
                                         <img src="./source//MENU/tortas2.jpg.png" alt="Torta2" class="Tortas-Menu rounded-5" width="150px" height="170px">
-                                        <div class="Descripcion px-3">
-                                            <h3>Gorditas</h3>
+                                        <div class="Descripcion px-3 my-auto">
+                                            <h3>Gorditas (Martes)</h3>
                                             <hr>
-                                            <p class="Descripcion fs-5">Tortilla de masa gruesa rellena de chicharrón + proteína de tu elección, lechuga, queso y crema</p>
+                                            <p class="Descripcion fs-5 my-auto">Tortilla de masa gruesa rellena de chicharrón + proteína de tu elección, lechuga, queso y crema</p>
                                         </div>
                                     </div>
-                                    <div class="col-12 text-center p-3">
+                                    <div class="col-12 text-center p-3 my-auto">
+                                        <p class="fs-5"> <span class="fs-3 fw-bold" id="Precio-Gorditas">22</span> MXN </p>
                                         <a role="button" id="btn-Tortas-2" class="btn btn-ver" style="max-height : 40px;" data-bs-toggle="modal" data-bs-target="#M-Torta-2">Ver</a>
                                     </div>
                                 </div>
@@ -197,17 +180,18 @@
                             <div class="container-fluid">
                                 <div class="row">
                                     <!-- Producto usando 100% del espacio -->
-                                    <div class="col-12 d-flex p-3">
+                                    <div class="col-12 d-flex p-3 my-auto">
                                         <img src="./source//MENU/Tortas3.jpg.png" alt="Torta3" class="Tortas-Menu rounded-5" width="150px" height="170px">
                                         <div class="Descripcion px-3">
-                                            <h3>Pambazo</h3>
+                                            <h3>Pambazo (Miercoles)</h3>
                                             <hr>
-                                            <p class="Descripcion fs-5">Pan asado con salsa de chiles secos, relleno de papa con longaniza + proteína de tu elección, lechuga, queso y crema</p>
+                                            <p class="Descripcion fs-5 my-auto">Pan asado con salsa de chiles secos, relleno de papa con longaniza + proteína de tu elección, lechuga, queso y crema</p>
                                         </div>
                                     </div>
                                     <!-- Boton (Modal)-->
-                                    <div class="col-12 text-center p-3">
-                                        <a role="button" href="#0" id="btn-Tortas-3" class="btn btn-ver" style="max-height : 40px;" data-bs-toggle="modal" data-bs-target="#M-Torta-3">Ver</a>
+                                    <div class="col-12 text-center p-3 my-auto">
+                                        <p class="fs-5"> <span class="fs-3 fw-bold" id="Precio-Pambazo">25</span> MXN </p>
+                                        <a role="button" id="btn-Tortas-3" class="btn btn-ver" style="max-height : 40px;" data-bs-toggle="modal" data-bs-target="#M-Torta-3">Ver</a>
                                     </div>
                                 </div>
                             </div>
@@ -219,15 +203,16 @@
                             <div class="container-fluid">
                                 <div class="row">
                                     <!-- Producto usando 100% del espacio -->
-                                    <div class="col-12 d-flex p-3">
+                                    <div class="col-12 d-flex p-3 my-2">
                                         <img src="./source//MENU/Tortas4.jpg.png" alt="Torta4" class="Tortas-Menu rounded-5" width="150px" height="170px">
                                         <div class="Descripcion px-3">
-                                            <h3>Huarache</h3>
+                                            <h3>Huarache (Jueves)</h3>
                                             <hr>
-                                            <p class="Descripcion fs-5">Tortilla alargada con frijoles, proteína de tu elección, nopales, queso y crema</p>
+                                            <p class="Descripcion fs-5 my-auto">Tortilla alargada con frijoles, proteína de tu elección, nopales, queso y crema</p>
                                         </div>
                                     </div>
-                                    <div class="col-12 text-center p-3">
+                                    <div class="col-12 text-center p-3 my-4">
+                                        <p class="fs-5"> <span class="fs-3 fw-bold" id="Precio-Huarache">22</span> MXN </p>
                                         <a role="button" href="#0" id="btn-Tortas-4" class="btn btn-ver" style="max-height : 40px;" data-bs-toggle="modal" data-bs-target="#M-Torta-4">Ver</a>
                                     </div>
                                 </div>
@@ -241,8 +226,8 @@
         <!-- Categoria: Extras Formato de 2 columnas-->
         <div id="Menu-Extras" class="container my-2">
             <!-- Titulo de Categoria -->
-            <div class="Categoria p-4 rounded-5">
-                <h4>EXTRAS</h4>
+            <div class="Categoria p-4 rounded-4">
+                <h2>Extras</h2>
             </div>
 
             <div class="container my-2">
@@ -258,7 +243,7 @@
                                         <hr>
                                         <img src="./source//MENU/papas.jpeg" alt="Papas Francesa" class="Extras-Menu rounded-5" width="200px" height="200px">
                                         <p class="Descripcion fs-5 my-3">Papas a la Francesa con Sal,Catsup,Queso Amarillo y Salsa</p>
-                                        <h6 class="fst-italic"><span name="Precio" class="Precio fw-bold fs-4" id="Precio-Papas">40 </span> MXN</h6>
+                                        <p class="fs-5"><span class="fs-3 fw-bold" id="Precio-Papas">40 </span> MXN</p>
                                     </div>
                                     <!-- Boton (Modal)-->
                                     <div class="col-12 text-center p-3">
@@ -278,11 +263,11 @@
                                         <h3>Postres</h3>
                                         <hr>
                                         <img src="./source//MENU/postres.webp" alt="Postres" class="Extras-Menu rounded-5" width="200px" height="200px">
-                                        <p class="Descripcion fs-5 my-3">Yugurt con Gelatina y Flan</p>
-                                        <h6 class="fst-italic"><span name="Precio" class="Precio fw-bold fs-5" id="Precio-Postres">25</span> MXN</h6>
+                                        <p class="Descripcion fs-5 my-4">Yugurt con Gelatina y Flan</p>
+                                        <p class="fs-5"><span class="fs-3 fw-bold" id="Precio-Postres">25</span> MXN</p>
                                     </div>
                                     <!-- Boton (Modal)-->
-                                    <div class="col-12 text-center p-3">
+                                    <div class="col-12 text-center p-3 mt-3">
                                         <a role="button" id="btn-Extras-2" class="btn btn-ver" style="max-height : 40px;" data-bs-toggle="modal" data-bs-target="#M-Extras-2">Ver</a>
                                     </div>
                                 </div>
@@ -296,8 +281,8 @@
         <!-- Categoria: Bebidas Formato de 3 columnas-->
         <div id="Menu-Bebidas" class="container my-2">
             <!-- Titulo de Categoria -->
-            <div class="Categoria p-4 rounded-5">
-                <h4>BEBIDAS:<span name="Precio" class="Precio fw-bold fs-2" id="Precio-Bebidas"> 25</span> MXN</h4>
+            <div class="Categoria p-4 rounded-4">
+                <h2>Bebidas</h2>
             </div>
 
             <div class="container my-2">
@@ -313,6 +298,7 @@
                                         <hr>
                                         <img src="./source//MENU/agua_del_dia.avif" alt="Agua del Dia" class="Bebidas-Menu rounded-3" width="200px" height="200px">
                                         <p class="Descripcion fs-5 my-2">Agua del Dia (500 ml)</p>
+                                        <h6> <span class="Precio-Bebidas fw-bold fs-5" id="Precio-Agua">25</span> MXN</h6>
                                     </div>
                                     <!-- Boton (Modal)-->
                                     <div class="col-12 text-center my-2">
@@ -333,6 +319,7 @@
                                         <hr>
                                         <img src="./source//MENU/refresco.jpeg" alt="Refrescos" class="Bebidas-Menu rounded-3" width="200px" height="200px">
                                         <p class="Descripcion fs-5 my-2">Refrescos de (355 ml)</p>
+                                        <h6> <span class="Precio-Bebidas fw-bold fs-5" id="Precio-Refrescos">25</span> MXN</h6>
                                     </div>
                                     <!-- Boton (Modal)-->
                                     <div class="col-12 text-center my-2">
@@ -353,6 +340,7 @@
                                         <hr>
                                         <img src="./source//MENU/boing.jpg" alt="Jugos" class="Bebidas-Menu rounded-3" width="200px" height="200px">
                                         <p class="Descripcion fs-5 my-2">Boing de (354 ml)</p>
+                                        <h6><span class="Precio-Bebidas fw-bold fs-5" id="Precio-Jugos">25</span> MXN</h6>
                                     </div>
                                     <!-- Boton (Modal)-->
                                     <div class="col-12 text-center my-2">
@@ -373,6 +361,7 @@
             <div class="row mx-5">
                 <!-- 100% en Celular y 10% en Superiores -->
 <<<<<<< HEAD
+<<<<<<< HEAD
                 <div class="col-12 col-md-2 my-1 mx-2">
 =======
 <<<<<<< Updated upstream
@@ -381,10 +370,14 @@
                 <div class="col-12 col-md-2 my-1 mx-auto">
 >>>>>>> Stashed changes
 >>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
+=======
+                <div class="col-12 col-md-2 my-1 mx-auto">
+>>>>>>> main
                     <div class="footer-item">
                         <a role="button" href="Bienvenida.php" id="btn-footer-Inicio" class="btn btn-footer">Bienvenida</a>
                     </div>
                 </div>
+<<<<<<< HEAD
 <<<<<<< Updated upstream
                 <!-- 100% en Celular y 10% en Superiores -->
                 <div class="col-12 col-md-2 my-1 mx-2">
@@ -399,20 +392,29 @@
 =======
                 <div class="col-12 col-md-2 my-1 mx-auto">
 >>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
+=======
+                <div class="col-12 col-md-2 my-1 mx-auto">
+>>>>>>> main
                     <div class="footer-item p-2">
                         <span>Copyright ©</span>
                     </div>
                 </div>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> main
                 <!-- 100% en Celular y 10% en Superiores -->
                 <div class="col-12 col-md-2 my-1 mx-auto">
                     <div class="footer-item">
                         <a role="button" id="btn-footer-Horario" class="btn btn-footer" data-bs-toggle="modal" data-bs-target="#Horario">Horarios</a>
                     </div>
                 </div>
+<<<<<<< HEAD
 >>>>>>> Stashed changes
 >>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
+=======
+>>>>>>> main
             </div>
         </div>
     </footer>
@@ -433,9 +435,13 @@
                     </div>
                     <h1>Tacos:</h1>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
                     <button type="reset" class="btn-close bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
 >>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
+=======
+                    <button type="reset" class="btn-close bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
+>>>>>>> main
                 </div>
 
                 <div class="modal-body">    <!-- Body-Modal -->
@@ -459,10 +465,14 @@
                                 <form id="Ingredientes">
                                     <!-- Proteinas --> 
 <<<<<<< HEAD
+<<<<<<< HEAD
                                     <span class="fw-bold fs-5">Proteinas</span>
 =======
                                     <span class="fw-bold fs-5">Proteinas (OBLIGATORIO)</span>
 >>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
+=======
+                                    <span class="fw-bold fs-5">Proteinas (OBLIGATORIO)</span>
+>>>>>>> main
                                     <div class="form-check">
                                         <input type="checkbox" class="form-check-input-proteina" id="Proteina-1">
                                         <label for="Proteina-1" class="form-check-label">
@@ -525,25 +535,34 @@
                                     <span class="fw-bold fs-5">Extras + $10mxn</span>
                                     <div class="form-check">
 <<<<<<< HEAD
+<<<<<<< HEAD
                                         <input type="checkbox" class="form-check-input" id="Extras-1">
 =======
                                         <input type="checkbox" class="form-check-input INCREMENTO" value="10">
 >>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
+=======
+                                        <input type="checkbox" class="form-check-input INCREMENTO" value="10">
+>>>>>>> main
                                         <label for="Extras-1" class="form-check-label">
                                             Costra de Queso Oaxaca
                                         </label>
                                     </div>
                                     <div class="form-check">
 <<<<<<< HEAD
+<<<<<<< HEAD
                                         <input type="checkbox" class="form-check-input" id="Extras-2">
 =======
                                         <input type="checkbox" class="form-check-input INCREMENTO" value="10">
 >>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
+=======
+                                        <input type="checkbox" class="form-check-input INCREMENTO" value="10">
+>>>>>>> main
                                         <label for="Extras-2" class="form-check-label">
                                             Extras Papas
                                         </label>
                                     </div>
                                     <hr>
+<<<<<<< HEAD
 <<<<<<< HEAD
                                     <span class="fw-bold fs-5">Comentarios (opcional)</span>
                                     <div class="form-comment">
@@ -553,6 +572,11 @@
                                     <div class="form-comment">
                                         <input type="text" class="form-comment-input" placeholder="Opcional">
 >>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
+=======
+                                    <span class="fw-bold fs-5">Comentarios</span>
+                                    <div class="form-comment">
+                                        <input type="text" class="form-comment-input" placeholder="Opcional">
+>>>>>>> main
                                     </div>
                                 </form>
                             </div>    
@@ -561,10 +585,13 @@
                 </div>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
                 <div class="modal-footer">  <!-- Footer-Modal -->
                     <input type="number" placeholder="CANTIDAD" id="cantidad">
                      <button type="submit" class="btn btn-primary" id="Agregar-Cambios">Agregar</button>
 =======
+=======
+>>>>>>> main
                 <div class="modal-footer d-flex justify-content-between">  <!-- Footer-Modal -->
                     <div class="left-footer pb-2">
                         <label for="Precio-Tacos">TOTAL:</label>
@@ -577,7 +604,10 @@
                     </div>
                     
                     
+<<<<<<< HEAD
 >>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
+=======
+>>>>>>> main
                 </div>
             </div>
         </div>
@@ -594,9 +624,13 @@
                     </div>
                     <h1>Torta Sencilla:</h1>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
                     <button type="reset" class="btn-close bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
 >>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
+=======
+                    <button type="reset" class="btn-close bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
+>>>>>>> main
                 </div>
 
                 <div class="modal-body">    <!-- Body-Modal -->
@@ -620,10 +654,14 @@
                                 <form id="Ingredientes">
                                     <!-- Proteinas --> 
 <<<<<<< HEAD
+<<<<<<< HEAD
                                     <span class="fw-bold fs-5">Proteinas</span>
 =======
                                     <span class="fw-bold fs-5">Proteinas (OBLIGATORIO)</span>
 >>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
+=======
+                                    <span class="fw-bold fs-5">Proteinas (OBLIGATORIO)</span>
+>>>>>>> main
                                     <div class="form-check">
                                         <input type="checkbox" class="form-check-input-proteina" id="Proteina-1">
                                         <label for="Proteina-1" class="form-check-label">
@@ -692,25 +730,34 @@
                                     <span class="fw-bold fs-5">Extras + $10mxn</span>
                                     <div class="form-check">
 <<<<<<< HEAD
+<<<<<<< HEAD
                                         <input type="checkbox" class="form-check-input" id="Extras-1">
 =======
                                         <input type="checkbox" class="form-check-input INCREMENTO" value="10">
 >>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
+=======
+                                        <input type="checkbox" class="form-check-input INCREMENTO" value="10">
+>>>>>>> main
                                         <label for="Extras-1" class="form-check-label">
                                             Costra de Queso Oaxaca
                                         </label>
                                     </div>
                                     <div class="form-check">
 <<<<<<< HEAD
+<<<<<<< HEAD
                                         <input type="checkbox" class="form-check-input" id="Extras-2">
 =======
                                         <input type="checkbox" class="form-check-input INCREMENTO" value="10">
 >>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
+=======
+                                        <input type="checkbox" class="form-check-input INCREMENTO" value="10">
+>>>>>>> main
                                         <label for="Extras-2" class="form-check-label">
                                             Extras Papas
                                         </label>
                                     </div>
                                     <hr>
+<<<<<<< HEAD
 <<<<<<< HEAD
                                     <span class="fw-bold fs-5">Comentarios (opcional)</span>
                                     <div class="form-comment">
@@ -720,6 +767,11 @@
                                     <div class="form-comment">
                                         <input type="text" class="form-comment-input" placeholder="Opcional">
 >>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
+=======
+                                    <span class="fw-bold fs-5">Comentarios</span>
+                                    <div class="form-comment">
+                                        <input type="text" class="form-comment-input" placeholder="Opcional">
+>>>>>>> main
                                     </div>
                                 </form>
                             </div>    
@@ -728,10 +780,13 @@
                 </div>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
                 <div class="modal-footer">  <!-- Footer-Modal -->
                     <input type="number" placeholder="CANTIDAD" id="cantidad">
                      <button type="submit" class="btn btn-primary" id="Agregar-Cambios">Agregar</button>
 =======
+=======
+>>>>>>> main
                 <div class="modal-footer d-flex justify-content-between">  <!-- Footer-Modal -->
                 <div class="left-footer pb-2">
                         <label>TOTAL:</label>
@@ -742,7 +797,10 @@
                         <input type="number" class="cantidad" min="0" max="10" id="CANTIDAD" value="1">
                         <button type="submit" class="btn btn-primary btn-agregar PROD">Agregar</button>
                     </div>
+<<<<<<< HEAD
 >>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
+=======
+>>>>>>> main
                 </div>
             </div>
         </div>
@@ -759,9 +817,13 @@
                     </div>
                     <h1>Gordita:</h1>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
                     <button type="reset" class="btn-close bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
 >>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
+=======
+                    <button type="reset" class="btn-close bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
+>>>>>>> main
                 </div>
 
                 <div class="modal-body">    <!-- Body-Modal -->
@@ -775,9 +837,13 @@
                                     <div class="img-text-area p-2">
                                         <p>Tortilla de masa gruesa rellena de chicharrón + proteína de tu elección, lechuga, queso y crema</p>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
                                         <p>(SOLO LOS MARTES)</p>
 >>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
+=======
+                                        <p>(SOLO LOS MARTES)</p>
+>>>>>>> main
                                     </div>
                                 </div>
                             </div>
@@ -789,10 +855,14 @@
                                 <form id="Ingredientes">
                                     <!-- Proteinas --> 
 <<<<<<< HEAD
+<<<<<<< HEAD
                                     <span class="fw-bold fs-5">Proteinas</span>
 =======
                                     <span class="fw-bold fs-5">Proteinas (OBLIGATORIO)</span>
 >>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
+=======
+                                    <span class="fw-bold fs-5">Proteinas (OBLIGATORIO)</span>
+>>>>>>> main
                                     <div class="form-check">
                                         <input type="checkbox" class="form-check-input-proteina" id="Proteina-1">
                                         <label for="Proteina-1" class="form-check-label">
@@ -861,25 +931,34 @@
                                     <span class="fw-bold fs-5">Extras + $10mxn</span>
                                     <div class="form-check">
 <<<<<<< HEAD
+<<<<<<< HEAD
                                         <input type="checkbox" class="form-check-input" id="Extras-1">
 =======
                                         <input type="checkbox" class="form-check-input INCREMENTO" value="10">
 >>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
+=======
+                                        <input type="checkbox" class="form-check-input INCREMENTO" value="10">
+>>>>>>> main
                                         <label for="Extras-1" class="form-check-label">
                                             Costra de Queso Oaxaca
                                         </label>
                                     </div>
                                     <div class="form-check">
 <<<<<<< HEAD
+<<<<<<< HEAD
                                         <input type="checkbox" class="form-check-input" id="Extras-2">
 =======
                                         <input type="checkbox" class="form-check-input INCREMENTO" value="10">
 >>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
+=======
+                                        <input type="checkbox" class="form-check-input INCREMENTO" value="10">
+>>>>>>> main
                                         <label for="Extras-2" class="form-check-label">
                                             Extras Papas
                                         </label>
                                     </div>
                                     <hr>
+<<<<<<< HEAD
 <<<<<<< HEAD
                                     <span class="fw-bold fs-5">Comentarios (opcional)</span>
                                     <div class="form-comment">
@@ -889,6 +968,11 @@
                                     <div class="form-comment">
                                         <input type="text" class="form-comment-input" placeholder="Opcional">
 >>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
+=======
+                                    <span class="fw-bold fs-5">Comentarios</span>
+                                    <div class="form-comment">
+                                        <input type="text" class="form-comment-input" placeholder="Opcional">
+>>>>>>> main
                                     </div>
                                 </form>
                             </div>    
@@ -897,10 +981,13 @@
                 </div>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
                 <div class="modal-footer">  <!-- Footer-Modal -->
                     <input type="number" placeholder="CANTIDAD" id="cantidad">
                      <button type="submit" class="btn btn-primary" id="Agregar-Cambios">Agregar</button>
 =======
+=======
+>>>>>>> main
                 <div class="modal-footer d-flex justify-content-between">  <!-- Footer-Modal -->
                 <div class="left-footer pb-2">
                         <label>TOTAL:</label>
@@ -911,7 +998,10 @@
                         <input type="number" class="cantidad" min="0" max="10" id="CANTIDAD" value="1">
                         <button type="submit" class="btn btn-primary btn-agregar PROD">Agregar</button>
                     </div>
+<<<<<<< HEAD
 >>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
+=======
+>>>>>>> main
                 </div>
             </div>
         </div>
@@ -928,9 +1018,13 @@
                     </div>
                     <h1>Pambazo:</h1>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
                     <button type="reset" class="btn-close bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
 >>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
+=======
+                    <button type="reset" class="btn-close bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
+>>>>>>> main
                 </div>
 
                 <div class="modal-body">    <!-- Body-Modal -->
@@ -944,9 +1038,13 @@
                                     <div class="img-text-area p-2">
                                         <p>Pan asado con salsa de chiles secos, relleno de papa con longaniza + proteína de tu elección, lechuga, queso y crema</p>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
                                         <p>(SOLO LOS MIERCOLES)</p>
 >>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
+=======
+                                        <p>(SOLO LOS MIERCOLES)</p>
+>>>>>>> main
                                     </div>
                                 </div>
                             </div>
@@ -958,10 +1056,14 @@
                                 <form id="Ingredientes">
                                     <!-- Proteinas --> 
 <<<<<<< HEAD
+<<<<<<< HEAD
                                     <span class="fw-bold fs-5">Proteinas</span>
 =======
                                     <span class="fw-bold fs-5">Proteinas (OBLIGATORIO)</span>
 >>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
+=======
+                                    <span class="fw-bold fs-5">Proteinas (OBLIGATORIO)</span>
+>>>>>>> main
                                     <div class="form-check">
                                         <input type="checkbox" class="form-check-input-proteina" id="Proteina-1">
                                         <label for="Proteina-1" class="form-check-label">
@@ -1042,25 +1144,34 @@
                                     <span class="fw-bold fs-5">Extras + $10mxn</span>
                                     <div class="form-check">
 <<<<<<< HEAD
+<<<<<<< HEAD
                                         <input type="checkbox" class="form-check-input" id="Extras-1">
 =======
                                         <input type="checkbox" class="form-check-input INCREMENTO" value="10">
 >>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
+=======
+                                        <input type="checkbox" class="form-check-input INCREMENTO" value="10">
+>>>>>>> main
                                         <label for="Extras-1" class="form-check-label">
                                             Costra de Queso Oaxaca
                                         </label>
                                     </div>
                                     <div class="form-check">
 <<<<<<< HEAD
+<<<<<<< HEAD
                                         <input type="checkbox" class="form-check-input" id="Extras-2">
 =======
                                         <input type="checkbox" class="form-check-input INCREMENTO" value="10">
 >>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
+=======
+                                        <input type="checkbox" class="form-check-input INCREMENTO" value="10">
+>>>>>>> main
                                         <label for="Extras-2" class="form-check-label">
                                             Extras Papas
                                         </label>
                                     </div>
                                     <hr>
+<<<<<<< HEAD
 <<<<<<< HEAD
                                     <span class="fw-bold fs-5">Comentarios (opcional)</span>
                                     <div class="form-comment">
@@ -1070,6 +1181,11 @@
                                     <div class="form-comment">
                                         <input type="text" class="form-comment-input" placeholder="Opcional">
 >>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
+=======
+                                    <span class="fw-bold fs-5">Comentarios</span>
+                                    <div class="form-comment">
+                                        <input type="text" class="form-comment-input" placeholder="Opcional">
+>>>>>>> main
                                     </div>
                                 </form>
                             </div>    
@@ -1078,10 +1194,13 @@
                 </div>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
                 <div class="modal-footer">  <!-- Footer-Modal -->
                     <input type="number" placeholder="CANTIDAD" id="cantidad">
                      <button type="submit" class="btn btn-primary" id="Agregar-Cambios">Agregar</button>
 =======
+=======
+>>>>>>> main
                 <div class="modal-footer d-flex justify-content-between">  <!-- Footer-Modal -->
                 <div class="left-footer pb-2">
                         <label>TOTAL:</label>
@@ -1092,7 +1211,10 @@
                         <input type="number" class="cantidad" min="0" max="10" id="CANTIDAD" value="1">
                         <button type="submit" class="btn btn-primary btn-agregar PROD">Agregar</button>
                     </div>
+<<<<<<< HEAD
 >>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
+=======
+>>>>>>> main
                 </div>
             </div>
         </div>
@@ -1109,9 +1231,13 @@
                     </div>
                     <h1>Huarache:</h1>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
                     <button type="reset" class="btn-close bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
 >>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
+=======
+                    <button type="reset" class="btn-close bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
+>>>>>>> main
                 </div>
 
                 <div class="modal-body">    <!-- Body-Modal -->
@@ -1125,9 +1251,13 @@
                                     <div class="img-text-area p-2">
                                         <p>Tortilla alargada con frijoles, proteína de elección, nopales, queso y crema</p>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
                                         <p>(SOLO LOS JUEVES)</p>
 >>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
+=======
+                                        <p>(SOLO LOS JUEVES)</p>
+>>>>>>> main
                                     </div>
                                 </div>
                             </div>
@@ -1139,10 +1269,14 @@
                                 <form id="Ingredientes">
                                     <!-- Proteinas --> 
 <<<<<<< HEAD
+<<<<<<< HEAD
                                     <span class="fw-bold fs-5">Proteinas</span>
 =======
                                     <span class="fw-bold fs-5">Proteinas (OBLIGATORIO)</span>
 >>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
+=======
+                                    <span class="fw-bold fs-5">Proteinas (OBLIGATORIO)</span>
+>>>>>>> main
                                     <div class="form-check">
                                         <input type="checkbox" class="form-check-input-proteina" id="Proteina-1">
                                         <label for="Proteina-1" class="form-check-label">
@@ -1211,25 +1345,34 @@
                                     <span class="fw-bold fs-5">Extras + $10mxn</span>
                                     <div class="form-check">
 <<<<<<< HEAD
+<<<<<<< HEAD
                                         <input type="checkbox" class="form-check-input" id="Extras-1">
 =======
                                         <input type="checkbox" class="form-check-input INCREMENTO" value="10">
 >>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
+=======
+                                        <input type="checkbox" class="form-check-input INCREMENTO" value="10">
+>>>>>>> main
                                         <label for="Extras-1" class="form-check-label">
                                             Costra de Queso Oaxaca
                                         </label>
                                     </div>
                                     <div class="form-check">
 <<<<<<< HEAD
+<<<<<<< HEAD
                                         <input type="checkbox" class="form-check-input" id="Extras-2">
 =======
                                         <input type="checkbox" class="form-check-input INCREMENTO" value="10">
 >>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
+=======
+                                        <input type="checkbox" class="form-check-input INCREMENTO" value="10">
+>>>>>>> main
                                         <label for="Extras-2" class="form-check-label">
                                             Extras Papas
                                         </label>
                                     </div>
                                     <hr>
+<<<<<<< HEAD
 <<<<<<< HEAD
                                     <span class="fw-bold fs-5">Comentarios (opcional)</span>
                                     <div class="form-comment">
@@ -1239,6 +1382,11 @@
                                     <div class="form-comment">
                                         <input type="text" class="form-comment-input" placeholder="Opcional">
 >>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
+=======
+                                    <span class="fw-bold fs-5">Comentarios</span>
+                                    <div class="form-comment">
+                                        <input type="text" class="form-comment-input" placeholder="Opcional">
+>>>>>>> main
                                     </div>
                                 </form>
                             </div>    
@@ -1247,10 +1395,13 @@
                 </div>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
                 <div class="modal-footer">  <!-- Footer-Modal -->
                     <input type="number" placeholder="CANTIDAD" id="cantidad">
                      <button type="submit" class="btn btn-primary" id="Agregar-Cambios">Agregar</button>
 =======
+=======
+>>>>>>> main
                 <div class="modal-footer d-flex justify-content-between">  <!-- Footer-Modal -->
                     <div class="left-footer pb-2">
                         <label>TOTAL:</label>
@@ -1261,7 +1412,10 @@
                         <input type="number" class="cantidad" min="0" max="10" id="CANTIDAD" value="1">
                         <button type="submit" class="btn btn-primary btn-agregar PROD">Agregar</button>
                     </div>
+<<<<<<< HEAD
 >>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
+=======
+>>>>>>> main
                 </div>
             </div>
         </div>
@@ -1278,9 +1432,13 @@
                     </div>
                     <h1>Papas a la Francesa:</h1>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
                     <button type="reset" class="btn-close bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
 >>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
+=======
+                    <button type="reset" class="btn-close bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
+>>>>>>> main
                 </div>
 
                 <div class="modal-body">    <!-- Body-Modal -->
@@ -1303,16 +1461,22 @@
                             <!-- Formulario  -->
                                 <form>
 <<<<<<< HEAD
+<<<<<<< HEAD
                                     <label for="opciones" class="form-label">Selecciona un Tamaño:</label>
                                     <select class="form-select" id="opciones" name="opciones">
                                         <option value="Grande">Grande (Orden Completa) 40mxn</option>
                                         <option value="Chica">Chica (Media Orden) 25mxn</option>
 =======
+=======
+>>>>>>> main
                                     <label for="opciones" class="form-label fs-5 fw-bold">Selecciona Tamaño de la Orden:</label>
                                     <select class="form-select" id="tamaño-papas">
                                         <option value="grande" data-precio-base="40">Grande (Orden Completa) 40mxn</option>
                                         <option value="pequeño" data-precio-base="25">Chica (Media Orden) 25mxn</option>
+<<<<<<< HEAD
 >>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
+=======
+>>>>>>> main
                                     </select>
                                     <span class="fs-5 fw-bold">Ingredientes</span>
                                     <div class="form-check">
@@ -1340,10 +1504,13 @@
                 </div>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
                 <div class="modal-footer">  <!-- Footer-Modal -->
                     <input type="number" placeholder="CANTIDAD" id="cantidad">
                      <button type="submit" class="btn btn-primary" id="Agregar-Cambios">Agregar</button>
 =======
+=======
+>>>>>>> main
                 <div class="modal-footer d-flex justify-content-between">  <!-- Footer-Modal -->
                     <div class="left-footer pb-2">
                         <label>TOTAL:</label>
@@ -1354,7 +1521,10 @@
                         <input type="number" class="cantidad" min="0" max="10" id="cantidad-papas" value="1">
                         <button type="submit" class="btn btn-primary btn-agregar">Agregar</button>
                     </div>
+<<<<<<< HEAD
 >>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
+=======
+>>>>>>> main
                 </div>
             </div>
         </div>
@@ -1371,9 +1541,13 @@
                     </div>
                     <h1>Gelatinas y Flanes:</h1>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
                     <button type="reset" class="btn-close bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
 >>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
+=======
+                    <button type="reset" class="btn-close bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
+>>>>>>> main
                 </div>
 
                 <div class="modal-body">    <!-- Body-Modal -->
@@ -1396,12 +1570,17 @@
                             <!-- Formulario  -->
                                 <form>
 <<<<<<< HEAD
+<<<<<<< HEAD
                                     <label for="opciones" class="form-label">Selecciona un Postre:</label>
                                     <select class="form-select" id="opciones" name="opciones">
 =======
                                     <label for="opciones" class="form-label">Selecciona un Postre: </label>
                                     <select class="form-select" id="opciones">
 >>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
+=======
+                                    <label for="opciones" class="form-label">Selecciona un Postre: </label>
+                                    <select class="form-select" id="opciones">
+>>>>>>> main
                                         <option value="Mango">GELATINA-(Mango)</option>
                                         <option value="Fresa">GELATINA-(Fresa)</option>
                                         <option value="Limon">GELATINA-(Limon)</option>
@@ -1417,10 +1596,13 @@
                 </div>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
                 <div class="modal-footer">  <!-- Footer-Modal -->
                     <input type="number" placeholder="CANTIDAD" id="cantidad">
                      <button type="submit" class="btn btn-primary" id="Agregar-Cambios">Agregar</button>
 =======
+=======
+>>>>>>> main
                 <div class="modal-footer d-flex justify-content-between">  <!-- Footer-Modal -->
                     <div class="left-footer pb-2">
                         <label>TOTAL:</label>
@@ -1431,7 +1613,10 @@
                         <input type="number" class="cantidad" min="0" max="10" value="1" id="CANTIDAD">
                         <button type="submit" class="btn btn-primary btn-agregar">Agregar</button>
                     </div>
+<<<<<<< HEAD
 >>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
+=======
+>>>>>>> main
                 </div>
             </div>
         </div>
@@ -1448,9 +1633,13 @@
                     </div>
                     <h1>Agua del Dia:</h1>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
                     <button type="reset" class="btn-close bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
 >>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
+=======
+                    <button type="reset" class="btn-close bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
+>>>>>>> main
                 </div>
 
                 <div class="modal-body">    <!-- Body-Modal -->
@@ -1473,6 +1662,7 @@
                             <!-- Formulario  -->
                                 <form>
 <<<<<<< HEAD
+<<<<<<< HEAD
                                     <label for="opciones" class="form-label">Selecciona un Agua:</label>
                                     <select class="form-select" id="opciones" name="opciones">
                                         <option value="Agua-1">Jamaica</option>
@@ -1482,11 +1672,18 @@
 =======
                                     <label for="opciones" class="form-label">Selecciona un Sabor: </label>
                                     <select class="form-select" id="opciones" name="opciones">
+=======
+                                    <label for="opciones" class="form-label">Selecciona un Sabor: </label>
+                                    <select class="form-select" id="opciones" name="opciones">
+>>>>>>> main
                                         <option>Jamaica</option>
                                         <option>Horchata</option>
                                         <option>Tamarindo</option>
                                         <option>Simple</option>
+<<<<<<< HEAD
 >>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
+=======
+>>>>>>> main
                                     </select>
                                 </form>
                             </div>    
@@ -1495,10 +1692,13 @@
                 </div>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
                 <div class="modal-footer">  <!-- Footer-Modal -->
                     <input type="number" placeholder="CANTIDAD" id="cantidad">
                      <button type="submit" class="btn btn-primary" id="Agregar-Cambios">Agregar</button>
 =======
+=======
+>>>>>>> main
                 <div class="modal-footer d-flex justify-content-between">  <!-- Footer-Modal -->   
                     <div class="left-footer pb-2">
                         <label>TOTAL:</label>
@@ -1509,7 +1709,10 @@
                         <input type="number" class="cantidad" min="0" max="10" value="1" id="CANTIDAD">
                         <button type="submit" class="btn btn-primary btn-agregar">Agregar</button>
                     </div>
+<<<<<<< HEAD
 >>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
+=======
+>>>>>>> main
                 </div>
             </div>
         </div>
@@ -1526,9 +1729,13 @@
                     </div>
                     <h1>Refrescos:</h1>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
                     <button type="reset" class="btn-close bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
 >>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
+=======
+                    <button type="reset" class="btn-close bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
+>>>>>>> main
                 </div>
 
                 <div class="modal-body">    <!-- Body-Modal -->
@@ -1564,10 +1771,13 @@
                 </div>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
                 <div class="modal-footer">  <!-- Footer-Modal -->
                     <input type="number" placeholder="CANTIDAD" id="cantidad">
                      <button type="submit" class="btn btn-primary" id="Agregar-Cambios">Agregar</button>
 =======
+=======
+>>>>>>> main
                 <div class="modal-footer d-flex justify-content-between">  <!-- Footer-Modal -->    
                     <div class="left-footer pb-2">
                         <label>TOTAL:</label>
@@ -1578,7 +1788,10 @@
                         <input type="number" class="cantidad" min="0" max="10" value="1" id="CANTIDAD">
                         <button type="submit" class="btn btn-primary btn-agregar">Agregar</button>
                     </div>
+<<<<<<< HEAD
 >>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
+=======
+>>>>>>> main
                 </div>
             </div>
         </div>
@@ -1595,9 +1808,13 @@
                     </div>
                     <h1>Boing:</h1>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
                     <button type="reset" class="btn-close bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
 >>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
+=======
+                    <button type="reset" class="btn-close bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
+>>>>>>> main
                 </div>
 
                 <div class="modal-body">    <!-- Body-Modal -->
@@ -1610,10 +1827,14 @@
                                     </div>
                                     <div class="img-text-area p-2">
 <<<<<<< HEAD
+<<<<<<< HEAD
                                         <p>Boing (354 ml)</p>
 =======
                                         <p>Boing diferentes sabores (354 ml)</p>
 >>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
+=======
+                                        <p>Boing diferentes sabores (354 ml)</p>
+>>>>>>> main
                                     </div>
                                 </div>
                             </div>
@@ -1624,10 +1845,14 @@
                             <!-- Formulario  -->
                                 <form>
 <<<<<<< HEAD
+<<<<<<< HEAD
                                     <label for="opciones" class="form-label">Selecciona un Jugo:</label>
 =======
                                     <label for="opciones" class="form-label">Selecciona un Sabor:</label>
 >>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
+=======
+                                    <label for="opciones" class="form-label">Selecciona un Sabor:</label>
+>>>>>>> main
                                     <select class="form-select" id="opciones" name="opciones">
                                         <option value="Mango">Mango</option>
                                         <option value="Guayaba">Guayaba</option>
@@ -1641,10 +1866,13 @@
                 </div>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
                 <div class="modal-footer">  <!-- Footer-Modal -->
                     <input type="number" placeholder="CANTIDAD" id="cantidad">
                      <button type="submit" class="btn btn-primary" id="Agregar-Cambios">Agregar</button>
 =======
+=======
+>>>>>>> main
                 <div class="modal-footer d-flex justify-content-between">  <!-- Footer-Modal -->
                     <div class="left-footer pb-2">
                         <label>TOTAL:</label>
@@ -1655,7 +1883,10 @@
                         <input type="number" class="cantidad" min="0" max="10" value="1" id="CANTIDAD">
                         <button type="submit" class="btn btn-primary btn-agregar">Agregar</button>
                     </div>
+<<<<<<< HEAD
 >>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
+=======
+>>>>>>> main
                 </div>
             </div>
         </div>
@@ -1749,50 +1980,50 @@
                         <div class="d-flex justify-content-between">
                             <div class="botton-left-area ms-2">
                                 <ul class="left-list list-unstyled">
-                                    <li class="fs-5">
-                                        LUNES
+                                    <li>
+                                      LUNES
                                     </li>
-                                    <li class="fs-5 my-1">
+                                    <li class="my-2">
                                         MARTES
                                     </li>
-                                    <li class="fs-5 my-1">
+                                    <li class="my-2">
                                         MIERCOLES
                                     </li>
-                                    <li class="fs-5 my-1">
+                                    <li class="my-2">
                                         JUEVES
                                     </li>
-                                    <li class="fs-5 my-1">
+                                    <li class="my-2">
                                         VIERNES
                                     </li>
-                                    <li class="fs-5 my-1">
+                                    <li class="my-2">
                                         SABADO
                                     </li>
-                                    <li class="fs-5 my-1">
+                                    <li class="my-2">
                                         DOMINGO
                                     </li>
                                 </ul>
                             </div>
                             <div class="botton-right-area me-2">
                                 <ul class="right-list list-unstyled">
-                                    <li class="fs-5 ms-3">
+                                    <li class="ms-3">
                                         CERRADO
                                     </li>
-                                    <li class="fs-5 my-1">
+                                    <li class="my-2">
                                         Estadio Xalapeño
                                     </li>
-                                    <li class="fs-5 my-1">
+                                    <li class="my-2">
                                         Parque Juarez
                                     </li>
-                                    <li class="fs-5 my-1">
+                                    <li class="my-2">
                                         Mercado de San José
                                     </li>
-                                    <li class="fs-5 my-1">
+                                    <li class="my-2">
                                         Plaza Xanath
                                     </li>
-                                    <li class="fs-5 my-1">
+                                    <li class="my-2">
                                         Los Berros
                                     </li>
-                                    <li class="fs-5 my-1">
+                                    <li class="my-2">
                                         Los Lagos
                                     </li>
                                 </ul>
@@ -1803,50 +2034,50 @@
                         <div class="d-flex justify-content-between">
                             <div class="botton-left-area ms-2">
                                 <ul class="left-list list-unstyled">
-                                    <li class="fs-5">
+                                    <li >
                                         LUNES
                                     </li>
-                                    <li class="fs-5 my-1">
+                                    <li class=" my-2">
                                         MARTES
                                     </li>
-                                    <li class="fs-5 my-1">
+                                    <li class=" my-2">
                                         MIERCOLES
                                     </li>
-                                    <li class="fs-5 my-1">
+                                    <li class=" my-2">
                                         JUEVES
                                     </li>
-                                    <li class="fs-5 my-1">
+                                    <li class=" my-2">
                                         VIERNES
                                     </li>
-                                    <li class="fs-5 my-1">
+                                    <li class=" my-2">
                                         SABADO
                                     </li>
-                                    <li class="fs-5 my-1">
+                                    <li class=" my-2">
                                         DOMINGO
                                     </li>
                                 </ul>
                             </div>
                             <div class="botton-right-area me-2">
                                 <ul class="right-list list-unstyled">
-                                    <li class="fs-5 ms-3 fw-bold">
+                                    <li class="ms-2 fw-bold">
                                         CERRADO
                                     </li>
-                                    <li class="fs-5 my-1 fw-bold">
+                                    <li class="my-2 fw-bold">
                                         12:00 PM - 6:00 PM
                                     </li>
-                                    <li class="fs-5 my-1 fw-bold">
+                                    <li class="my-2 fw-bold">
                                         12:00 PM - 6:00 PM
                                     </li>
-                                    <li class="fs-5 my-1 fw-bold">
+                                    <li class="my-2 fw-bold">
                                         12:00 PM - 6:00 PM
                                     </li>
-                                    <li class="fs-5 my-1 fw-bold">
+                                    <li class="my-2 fw-bold">
                                         3:00 PM - 11:00 PM
                                     </li>
-                                    <li class="fs-5 my-1 fw-bold">
+                                    <li class="my-2 fw-bold">
                                         3:00 PM - 11:00 PM
                                     </li>
-                                    <li class="fs-5 my-1 fw-bold">
+                                    <li class="my-2 fw-bold">
                                         3:00 PM - 11:00 PM
                                     </li>
                                 </ul>
@@ -1863,17 +2094,29 @@
     </div>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     <!-- JQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 >>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
+=======
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+>>>>>>> main
     <!-- Sweet Alert JS -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- Boostrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- JavaScript -->
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    <script src="./JS/Negocio.js"></script>
+>>>>>>> main
     <script src="./JS/Verificar.js"></script>
+    <script src="./JS/Cantidad.js"></script>
+    <script src="./JS/Precios.js"></script>
+    <script src="./JS/Papas.js"></script>
 
 =======
     <script src="./JS/Negocio.js"></script>

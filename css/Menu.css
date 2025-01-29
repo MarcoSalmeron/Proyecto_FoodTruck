@@ -1,7 +1,19 @@
+/*Gradiente Naranja con Rojo*/
+:root {
+  --bg: #fafafa;
+  --font: "Archivo", sans-serif;
+  --font-display: "Archivo Narrow", sans-serif;
+  --hotpink: #ffae0c;
+  --orange: #f27121;
+  --gradient: linear-gradient(35deg, var(--orange), var(--hotpink));
+}
+
 /*Fuente de google fonts: DOSIS*/
 body{
-    font-family: 'patrick-hand';
-    font-weight: 700;
+  font-family: "Oldenburg", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-weight: 700;
     background-color: #f4d2b9; /* Beige claro    */
     color: #3a3a3a; /* Gris oscuro */
     margin: 0;
@@ -46,6 +58,8 @@ body{
   
 .logo-bottom-img{
     width: 100%;
+    border-radius: 100%;
+    box-shadow: 5px 5px 15px 5px  #3a3a3a;
   }
   
 .left-area-logo{
@@ -61,7 +75,7 @@ body{
   }
 
 .Titulo{
-    font-family: "Rye", serif;
+    font-family: 'patrick-hand';
     font-weight: 400;
     font-style: normal;
   } 
@@ -81,7 +95,7 @@ body{
 }
 .nav-item:hover{
   color: whitesmoke;
-    background-color: #a89354;
+    background-color: #D88A5D;
 }
 /*  </Nav> */
 
@@ -89,55 +103,60 @@ body{
 
 /* Hover de Productos*/
 .Categoria{
-  font-family: "Rye", serif;
+  font-family: 'patrick-hand';
   font-weight: 400;
   font-style: normal;
   text-align: center;
-  background-color: #D88A5D;
+  background: var(--gradient);
+  color: whitesmoke;
 }
 
 .Tacos{
-  background-color: #f6b95a;
+  background-color: #4a4a4a;
+  color: whitesmoke;
   width: 100%;
   cursor: pointer;
   box-shadow: 0 0 20px rgb(0,0,0,0.4);
   border-radius: 25px;
 }
 .Tacos:hover{
-    transform: scale(0.9);
+    transform: scale(0.99);
 }
 
 .Tortas{
-    background-color: #f6b95a;
+    background-color: #4a4a4a;
+    color: whitesmoke;
     width: 100%;
     cursor: pointer;
     box-shadow: 0 0 20px rgb(0,0,0,0.4);
     border-radius: 25px;
 }
 .Tortas:hover{
-    transform: scale(0.9);
+    transform: scale(0.99);
 }
 
 .Extras{
-    background-color: #f6b95a;
+    background-color: #4a4a4a;
+    color: whitesmoke;
     width: 100%;
     cursor: pointer;
     box-shadow: 0 0 20px rgb(0,0,0,0.4);
     border-radius: 25px;
 }
 .Extras:hover{
-    transform: scale(0.9);
+    transform: scale(0.99);
 }
 
 .Bebidas{
-    background-color: #f6b95a;
+    background-color: #4a4a4a;
+    color: whitesmoke;
     width: 100%;
     cursor: pointer;
     box-shadow: 0 0 20px rgb(0,0,0,0.4);
     border-radius: 25px;
 }
 .Bebidas:hover{
-    transform: scale(0.9);
+    transform: scale(0.99);
 }
 /* </Main> */
 
@@ -164,18 +183,19 @@ body{
 
 /* <Footer> */
 footer{
-  background-color: #a89354;
+  background-color: #D88A5D;
 }
-.footer-item{
-  color: whitesmoke;
-}
+
 .btn-footer{
-  color: whitesmoke;
+  color: black;
+  text-decoration: underline;
   position: relative;
   padding: 6px 16px;
   border-radius: 0.25rem;
 }
 .btn-footer:hover{
-  text-decoration: underline;
+  text-decoration: none;
+  color: whitesmoke;
 }
 /* </Footer>  */
+
