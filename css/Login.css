@@ -1,0 +1,80 @@
+/*Fuente de google fonts: DOSIS*/
+.main-body {
+  font-family: "Oldenburg", serif;
+  font-style: normal;
+  font-weight: 700;
+  background-color: #f4d2b9; /* Beige claro    */
+  color: #3a3a3a; /* Gris oscuro */
+  margin: 0;
+  padding: 0;
+}
+/* <Header> */
+.Main-Header{
+  background-color: #6E6E6E;
+}
+.image-top-section{
+    height: 160px;
+    width: 100%;
+    border-radius: 15px;
+    position: relative;
+  }
+  
+.img-main-header{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+  }
+  
+.logo-bottom-section{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+  }
+  
+.logo-img-area{
+    height: 140px;
+    width: 120px;
+  }
+  
+.logo-bottom-img{
+    width: 100%;
+    border-radius: 100%;
+    box-shadow: 5px 5px 15px 5px  #3a3a3a;
+  }
+  
+.left-area-logo{
+    display: flex;
+    width: 95%;
+    margin-top: -20px;
+  }
+
+.Titulo{
+    font-family: 'patrick-hand';
+    font-weight: 400;
+    font-style: normal;
+    color: whitesmoke;
+  }
+
+.logo-text-area{
+    display: flex;
+    margin-left: 10px;
+  }
+ 
+/* </Header> */
+
+footer{
+    background-color: #D88A5D;
+}
+.btn-footer{
+    color: black;
+    position: relative;
+    padding: 6px 16px;
+    border-radius: 0.25rem;
+}
+.btn-footer:hover{
+    text-decoration: none;
+    color: whitesmoke;
+} 

@@ -1,0 +1,127 @@
+/*Gradiente Naranja con Rojo*/
+:root {
+  --bg: #fafafa;
+  --font: "Archivo", sans-serif;
+  --font-display: "Archivo Narrow", sans-serif;
+  --hotpink: #ec9e17;
+  --orange: #f27121;
+  --gradient: linear-gradient(35deg, var(--orange), var(--hotpink));
+}
+
+/*Fuente de google fonts*/
+body {
+  font-family: "Oldenburg", serif;
+  font-style: normal;
+  font-weight: 700;
+  background-color: #f4d2b9; /* Beige claro    */
+  color: #3a3a3a; /* Gris oscuro */
+  margin: 0;
+  padding: 0;
+}
+/* Ajustar pagina al Header,Main y Footer en Filas*/
+.Main-Page{
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+/* <Header> */
+.image-top-section{
+    height: 160px;
+    width: 100%;
+    border-radius: 15px;
+    position: relative;
+  }
+
+.btn-top-header{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    border: none;
+    border-radius: 9px;
+  }
+  
+.img-main-header{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+  }
+  
+.logo-bottom-section{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+  }
+  
+.logo-img-area{
+    height: 140px;
+    width: 120px;
+  }
+  
+.logo-bottom-img{
+    width: 100%;
+    border-radius: 100%;
+    box-shadow: 5px 5px 15px 5px  #3a3a3a;
+  }
+  
+.left-area-logo{
+    display: flex;
+    width: 95%;
+    margin-top: -20px;
+  }
+  
+.logo-text-area{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+  }
+.btn-login{
+  background: none;
+  border: none;
+}
+
+.Titulo{
+    font-family: 'patrick-hand';
+    font-weight: 700;
+    font-style: normal;
+    color: black;
+  }
+ 
+/* </Header> */
+
+/*<Main> */
+.nav-item{
+    cursor: pointer;
+    background: var(--gradient);
+    border-radius: 15px;
+}
+.nav-item a{
+    text-decoration: none;
+    color: #3a3a3a;
+}
+.nav-item:hover{
+    transform: scale(0.9);
+    color: whitesmoke;
+}
+
+/* </Main> */
+
+/* <Footer> */
+footer{
+    background-color: #D88A5D;
+}
+.btn-footer{
+    color: black;
+    position: relative;
+    padding: 6px 16px;
+    border-radius: 0.25rem;
+    text-decoration: underline;
+  }
+  .btn-footer:hover{
+    text-decoration: none;
+    color: whitesmoke;
+  }
+/* </Footer> */
