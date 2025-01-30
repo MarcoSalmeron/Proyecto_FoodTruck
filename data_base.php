@@ -1,7 +1,7 @@
 <?php
 
 $conexion = null;
-
+//Conectar a mySQL Base de Datos
 try {
     $engine = "mysql";
     $host="localhost";

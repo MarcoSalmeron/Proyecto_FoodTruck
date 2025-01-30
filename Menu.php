@@ -360,70 +360,26 @@
         <div class="container-fluid text-center">
             <div class="row mx-5">
                 <!-- 100% en Celular y 10% en Superiores -->
-<<<<<<< HEAD
-<<<<<<< HEAD
-                <div class="col-12 col-md-2 my-1 mx-2">
-=======
-<<<<<<< Updated upstream
-                <div class="col-12 col-md-1 my-1 mx-1">
-=======
                 <div class="col-12 col-md-2 my-1 mx-auto">
->>>>>>> Stashed changes
->>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
-=======
-                <div class="col-12 col-md-2 my-1 mx-auto">
->>>>>>> main
                     <div class="footer-item">
                         <a role="button" href="Bienvenida.php" id="btn-footer-Inicio" class="btn btn-footer">Bienvenida</a>
                     </div>
                 </div>
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-                <!-- 100% en Celular y 10% en Superiores -->
-                <div class="col-12 col-md-2 my-1 mx-2">
-                    <div class="footer-item">
-                        <a role="button" id="btn-footer-Horario" class="btn btn-footer" data-bs-toggle="modal" data-bs-target="#Horario">Horarios</a>
-                    </div>
-<<<<<<< HEAD
-                </div>
-                <div class="col-12 col-md-2 my-1 mx-2">
-=======
-                 </div>
-=======
                 <div class="col-12 col-md-2 my-1 mx-auto">
->>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
-=======
-                <div class="col-12 col-md-2 my-1 mx-auto">
->>>>>>> main
                     <div class="footer-item p-2">
                         <span>Copyright ©</span>
                     </div>
                 </div>
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> main
                 <!-- 100% en Celular y 10% en Superiores -->
                 <div class="col-12 col-md-2 my-1 mx-auto">
                     <div class="footer-item">
                         <a role="button" id="btn-footer-Horario" class="btn btn-footer" data-bs-toggle="modal" data-bs-target="#Horario">Horarios</a>
                     </div>
                 </div>
-<<<<<<< HEAD
->>>>>>> Stashed changes
->>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
-=======
->>>>>>> main
             </div>
         </div>
     </footer>
 
-<<<<<<< HEAD
-=======
-<<<<<<< Updated upstream
-=======
->>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
     <!-- Modal PRODUCTOS: Tacos -->
     <div class="modal fade" id="M-Tacos-1" aria-hidden="true">
         <div class="modal-dialog">
@@ -434,14 +390,7 @@
                         <img src="./source/Chilango_Street_logo.jpg" alt="Chilango-Logo" width="40" height="40" class="rounded-3 me-2">
                     </div>
                     <h1>Tacos:</h1>
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
                     <button type="reset" class="btn-close bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
->>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
-=======
-                    <button type="reset" class="btn-close bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
->>>>>>> main
                 </div>
 
                 <div class="modal-body">    <!-- Body-Modal -->
@@ -464,15 +413,7 @@
                                 <!-- Formulario -->
                                 <form id="Ingredientes">
                                     <!-- Proteinas --> 
-<<<<<<< HEAD
-<<<<<<< HEAD
-                                    <span class="fw-bold fs-5">Proteinas</span>
-=======
                                     <span class="fw-bold fs-5">Proteinas (OBLIGATORIO)</span>
->>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
-=======
-                                    <span class="fw-bold fs-5">Proteinas (OBLIGATORIO)</span>
->>>>>>> main
                                     <div class="form-check">
                                         <input type="checkbox" class="form-check-input-proteina" id="Proteina-1">
                                         <label for="Proteina-1" class="form-check-label">
@@ -534,49 +475,21 @@
                                     <!-- Extras -->
                                     <span class="fw-bold fs-5">Extras + $10mxn</span>
                                     <div class="form-check">
-<<<<<<< HEAD
-<<<<<<< HEAD
-                                        <input type="checkbox" class="form-check-input" id="Extras-1">
-=======
                                         <input type="checkbox" class="form-check-input INCREMENTO" value="10">
->>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
-=======
-                                        <input type="checkbox" class="form-check-input INCREMENTO" value="10">
->>>>>>> main
                                         <label for="Extras-1" class="form-check-label">
                                             Costra de Queso Oaxaca
                                         </label>
                                     </div>
                                     <div class="form-check">
-<<<<<<< HEAD
-<<<<<<< HEAD
-                                        <input type="checkbox" class="form-check-input" id="Extras-2">
-=======
                                         <input type="checkbox" class="form-check-input INCREMENTO" value="10">
->>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
-=======
-                                        <input type="checkbox" class="form-check-input INCREMENTO" value="10">
->>>>>>> main
                                         <label for="Extras-2" class="form-check-label">
                                             Extras Papas
                                         </label>
                                     </div>
                                     <hr>
-<<<<<<< HEAD
-<<<<<<< HEAD
-                                    <span class="fw-bold fs-5">Comentarios (opcional)</span>
-                                    <div class="form-comment">
-                                        <input type="text" class="form-comment-input" id="Comentarios">
-=======
                                     <span class="fw-bold fs-5">Comentarios</span>
                                     <div class="form-comment">
                                         <input type="text" class="form-comment-input" placeholder="Opcional">
->>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
-=======
-                                    <span class="fw-bold fs-5">Comentarios</span>
-                                    <div class="form-comment">
-                                        <input type="text" class="form-comment-input" placeholder="Opcional">
->>>>>>> main
                                     </div>
                                 </form>
                             </div>    
@@ -584,14 +497,6 @@
                     </div>
                 </div>
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-                <div class="modal-footer">  <!-- Footer-Modal -->
-                    <input type="number" placeholder="CANTIDAD" id="cantidad">
-                     <button type="submit" class="btn btn-primary" id="Agregar-Cambios">Agregar</button>
-=======
-=======
->>>>>>> main
                 <div class="modal-footer d-flex justify-content-between">  <!-- Footer-Modal -->
                     <div class="left-footer pb-2">
                         <label for="Precio-Tacos">TOTAL:</label>
@@ -604,10 +509,6 @@
                     </div>
                     
                     
-<<<<<<< HEAD
->>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
-=======
->>>>>>> main
                 </div>
             </div>
         </div>
@@ -623,14 +524,7 @@
                         <img src="./source/Chilango_Street_logo.jpg" alt="Chilango-Logo" width="40" height="40" class="rounded-3 me-2">
                     </div>
                     <h1>Torta Sencilla:</h1>
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
                     <button type="reset" class="btn-close bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
->>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
-=======
-                    <button type="reset" class="btn-close bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
->>>>>>> main
                 </div>
 
                 <div class="modal-body">    <!-- Body-Modal -->
@@ -653,15 +547,7 @@
                                 <!-- Formulario -->
                                 <form id="Ingredientes">
                                     <!-- Proteinas --> 
-<<<<<<< HEAD
-<<<<<<< HEAD
-                                    <span class="fw-bold fs-5">Proteinas</span>
-=======
                                     <span class="fw-bold fs-5">Proteinas (OBLIGATORIO)</span>
->>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
-=======
-                                    <span class="fw-bold fs-5">Proteinas (OBLIGATORIO)</span>
->>>>>>> main
                                     <div class="form-check">
                                         <input type="checkbox" class="form-check-input-proteina" id="Proteina-1">
                                         <label for="Proteina-1" class="form-check-label">
@@ -729,49 +615,21 @@
                                     <!-- Extras -->
                                     <span class="fw-bold fs-5">Extras + $10mxn</span>
                                     <div class="form-check">
-<<<<<<< HEAD
-<<<<<<< HEAD
-                                        <input type="checkbox" class="form-check-input" id="Extras-1">
-=======
                                         <input type="checkbox" class="form-check-input INCREMENTO" value="10">
->>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
-=======
-                                        <input type="checkbox" class="form-check-input INCREMENTO" value="10">
->>>>>>> main
                                         <label for="Extras-1" class="form-check-label">
                                             Costra de Queso Oaxaca
                                         </label>
                                     </div>
                                     <div class="form-check">
-<<<<<<< HEAD
-<<<<<<< HEAD
-                                        <input type="checkbox" class="form-check-input" id="Extras-2">
-=======
                                         <input type="checkbox" class="form-check-input INCREMENTO" value="10">
->>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
-=======
-                                        <input type="checkbox" class="form-check-input INCREMENTO" value="10">
->>>>>>> main
                                         <label for="Extras-2" class="form-check-label">
                                             Extras Papas
                                         </label>
                                     </div>
                                     <hr>
-<<<<<<< HEAD
-<<<<<<< HEAD
-                                    <span class="fw-bold fs-5">Comentarios (opcional)</span>
-                                    <div class="form-comment">
-                                        <input type="text" class="form-comment-input" id="Comentarios">
-=======
                                     <span class="fw-bold fs-5">Comentarios</span>
                                     <div class="form-comment">
                                         <input type="text" class="form-comment-input" placeholder="Opcional">
->>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
-=======
-                                    <span class="fw-bold fs-5">Comentarios</span>
-                                    <div class="form-comment">
-                                        <input type="text" class="form-comment-input" placeholder="Opcional">
->>>>>>> main
                                     </div>
                                 </form>
                             </div>    
@@ -779,14 +637,6 @@
                     </div>
                 </div>
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-                <div class="modal-footer">  <!-- Footer-Modal -->
-                    <input type="number" placeholder="CANTIDAD" id="cantidad">
-                     <button type="submit" class="btn btn-primary" id="Agregar-Cambios">Agregar</button>
-=======
-=======
->>>>>>> main
                 <div class="modal-footer d-flex justify-content-between">  <!-- Footer-Modal -->
                 <div class="left-footer pb-2">
                         <label>TOTAL:</label>
@@ -797,10 +647,6 @@
                         <input type="number" class="cantidad" min="0" max="10" id="CANTIDAD" value="1">
                         <button type="submit" class="btn btn-primary btn-agregar PROD">Agregar</button>
                     </div>
-<<<<<<< HEAD
->>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
-=======
->>>>>>> main
                 </div>
             </div>
         </div>
@@ -816,14 +662,7 @@
                         <img src="./source/Chilango_Street_logo.jpg" alt="Chilango-Logo" width="40" height="40" class="rounded-3 me-2">
                     </div>
                     <h1>Gordita:</h1>
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
                     <button type="reset" class="btn-close bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
->>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
-=======
-                    <button type="reset" class="btn-close bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
->>>>>>> main
                 </div>
 
                 <div class="modal-body">    <!-- Body-Modal -->
@@ -836,14 +675,7 @@
                                     </div>
                                     <div class="img-text-area p-2">
                                         <p>Tortilla de masa gruesa rellena de chicharrón + proteína de tu elección, lechuga, queso y crema</p>
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
                                         <p>(SOLO LOS MARTES)</p>
->>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
-=======
-                                        <p>(SOLO LOS MARTES)</p>
->>>>>>> main
                                     </div>
                                 </div>
                             </div>
@@ -854,15 +686,7 @@
                                 <!-- Formulario -->
                                 <form id="Ingredientes">
                                     <!-- Proteinas --> 
-<<<<<<< HEAD
-<<<<<<< HEAD
-                                    <span class="fw-bold fs-5">Proteinas</span>
-=======
                                     <span class="fw-bold fs-5">Proteinas (OBLIGATORIO)</span>
->>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
-=======
-                                    <span class="fw-bold fs-5">Proteinas (OBLIGATORIO)</span>
->>>>>>> main
                                     <div class="form-check">
                                         <input type="checkbox" class="form-check-input-proteina" id="Proteina-1">
                                         <label for="Proteina-1" class="form-check-label">
@@ -930,49 +754,21 @@
                                     <!-- Extras -->
                                     <span class="fw-bold fs-5">Extras + $10mxn</span>
                                     <div class="form-check">
-<<<<<<< HEAD
-<<<<<<< HEAD
-                                        <input type="checkbox" class="form-check-input" id="Extras-1">
-=======
                                         <input type="checkbox" class="form-check-input INCREMENTO" value="10">
->>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
-=======
-                                        <input type="checkbox" class="form-check-input INCREMENTO" value="10">
->>>>>>> main
                                         <label for="Extras-1" class="form-check-label">
                                             Costra de Queso Oaxaca
                                         </label>
                                     </div>
                                     <div class="form-check">
-<<<<<<< HEAD
-<<<<<<< HEAD
-                                        <input type="checkbox" class="form-check-input" id="Extras-2">
-=======
                                         <input type="checkbox" class="form-check-input INCREMENTO" value="10">
->>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
-=======
-                                        <input type="checkbox" class="form-check-input INCREMENTO" value="10">
->>>>>>> main
                                         <label for="Extras-2" class="form-check-label">
                                             Extras Papas
                                         </label>
                                     </div>
                                     <hr>
-<<<<<<< HEAD
-<<<<<<< HEAD
-                                    <span class="fw-bold fs-5">Comentarios (opcional)</span>
-                                    <div class="form-comment">
-                                        <input type="text" class="form-comment-input" id="Comentarios">
-=======
                                     <span class="fw-bold fs-5">Comentarios</span>
                                     <div class="form-comment">
                                         <input type="text" class="form-comment-input" placeholder="Opcional">
->>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
-=======
-                                    <span class="fw-bold fs-5">Comentarios</span>
-                                    <div class="form-comment">
-                                        <input type="text" class="form-comment-input" placeholder="Opcional">
->>>>>>> main
                                     </div>
                                 </form>
                             </div>    
@@ -980,14 +776,6 @@
                     </div>
                 </div>
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-                <div class="modal-footer">  <!-- Footer-Modal -->
-                    <input type="number" placeholder="CANTIDAD" id="cantidad">
-                     <button type="submit" class="btn btn-primary" id="Agregar-Cambios">Agregar</button>
-=======
-=======
->>>>>>> main
                 <div class="modal-footer d-flex justify-content-between">  <!-- Footer-Modal -->
                 <div class="left-footer pb-2">
                         <label>TOTAL:</label>
@@ -998,10 +786,6 @@
                         <input type="number" class="cantidad" min="0" max="10" id="CANTIDAD" value="1">
                         <button type="submit" class="btn btn-primary btn-agregar PROD">Agregar</button>
                     </div>
-<<<<<<< HEAD
->>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
-=======
->>>>>>> main
                 </div>
             </div>
         </div>
@@ -1017,14 +801,7 @@
                         <img src="./source/Chilango_Street_logo.jpg" alt="Chilango-Logo" width="40" height="40" class="rounded-3 me-2">
                     </div>
                     <h1>Pambazo:</h1>
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
                     <button type="reset" class="btn-close bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
->>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
-=======
-                    <button type="reset" class="btn-close bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
->>>>>>> main
                 </div>
 
                 <div class="modal-body">    <!-- Body-Modal -->
@@ -1037,14 +814,7 @@
                                     </div>
                                     <div class="img-text-area p-2">
                                         <p>Pan asado con salsa de chiles secos, relleno de papa con longaniza + proteína de tu elección, lechuga, queso y crema</p>
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
                                         <p>(SOLO LOS MIERCOLES)</p>
->>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
-=======
-                                        <p>(SOLO LOS MIERCOLES)</p>
->>>>>>> main
                                     </div>
                                 </div>
                             </div>
@@ -1055,15 +825,7 @@
                                 <!-- Formulario -->
                                 <form id="Ingredientes">
                                     <!-- Proteinas --> 
-<<<<<<< HEAD
-<<<<<<< HEAD
-                                    <span class="fw-bold fs-5">Proteinas</span>
-=======
                                     <span class="fw-bold fs-5">Proteinas (OBLIGATORIO)</span>
->>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
-=======
-                                    <span class="fw-bold fs-5">Proteinas (OBLIGATORIO)</span>
->>>>>>> main
                                     <div class="form-check">
                                         <input type="checkbox" class="form-check-input-proteina" id="Proteina-1">
                                         <label for="Proteina-1" class="form-check-label">
@@ -1143,49 +905,21 @@
                                     <!-- Extras -->
                                     <span class="fw-bold fs-5">Extras + $10mxn</span>
                                     <div class="form-check">
-<<<<<<< HEAD
-<<<<<<< HEAD
-                                        <input type="checkbox" class="form-check-input" id="Extras-1">
-=======
                                         <input type="checkbox" class="form-check-input INCREMENTO" value="10">
->>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
-=======
-                                        <input type="checkbox" class="form-check-input INCREMENTO" value="10">
->>>>>>> main
                                         <label for="Extras-1" class="form-check-label">
                                             Costra de Queso Oaxaca
                                         </label>
                                     </div>
                                     <div class="form-check">
-<<<<<<< HEAD
-<<<<<<< HEAD
-                                        <input type="checkbox" class="form-check-input" id="Extras-2">
-=======
                                         <input type="checkbox" class="form-check-input INCREMENTO" value="10">
->>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
-=======
-                                        <input type="checkbox" class="form-check-input INCREMENTO" value="10">
->>>>>>> main
                                         <label for="Extras-2" class="form-check-label">
                                             Extras Papas
                                         </label>
                                     </div>
                                     <hr>
-<<<<<<< HEAD
-<<<<<<< HEAD
-                                    <span class="fw-bold fs-5">Comentarios (opcional)</span>
-                                    <div class="form-comment">
-                                        <input type="text" class="form-comment-input" id="Comentarios">
-=======
                                     <span class="fw-bold fs-5">Comentarios</span>
                                     <div class="form-comment">
                                         <input type="text" class="form-comment-input" placeholder="Opcional">
->>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
-=======
-                                    <span class="fw-bold fs-5">Comentarios</span>
-                                    <div class="form-comment">
-                                        <input type="text" class="form-comment-input" placeholder="Opcional">
->>>>>>> main
                                     </div>
                                 </form>
                             </div>    
@@ -1193,14 +927,6 @@
                     </div>
                 </div>
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-                <div class="modal-footer">  <!-- Footer-Modal -->
-                    <input type="number" placeholder="CANTIDAD" id="cantidad">
-                     <button type="submit" class="btn btn-primary" id="Agregar-Cambios">Agregar</button>
-=======
-=======
->>>>>>> main
                 <div class="modal-footer d-flex justify-content-between">  <!-- Footer-Modal -->
                 <div class="left-footer pb-2">
                         <label>TOTAL:</label>
@@ -1211,10 +937,6 @@
                         <input type="number" class="cantidad" min="0" max="10" id="CANTIDAD" value="1">
                         <button type="submit" class="btn btn-primary btn-agregar PROD">Agregar</button>
                     </div>
-<<<<<<< HEAD
->>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
-=======
->>>>>>> main
                 </div>
             </div>
         </div>
@@ -1230,14 +952,7 @@
                         <img src="./source/Chilango_Street_logo.jpg" alt="Chilango-Logo" width="40" height="40" class="rounded-3 me-2">
                     </div>
                     <h1>Huarache:</h1>
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
                     <button type="reset" class="btn-close bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
->>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
-=======
-                    <button type="reset" class="btn-close bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
->>>>>>> main
                 </div>
 
                 <div class="modal-body">    <!-- Body-Modal -->
@@ -1250,14 +965,7 @@
                                     </div>
                                     <div class="img-text-area p-2">
                                         <p>Tortilla alargada con frijoles, proteína de elección, nopales, queso y crema</p>
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
                                         <p>(SOLO LOS JUEVES)</p>
->>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
-=======
-                                        <p>(SOLO LOS JUEVES)</p>
->>>>>>> main
                                     </div>
                                 </div>
                             </div>
@@ -1268,15 +976,7 @@
                                 <!-- Formulario -->
                                 <form id="Ingredientes">
                                     <!-- Proteinas --> 
-<<<<<<< HEAD
-<<<<<<< HEAD
-                                    <span class="fw-bold fs-5">Proteinas</span>
-=======
                                     <span class="fw-bold fs-5">Proteinas (OBLIGATORIO)</span>
->>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
-=======
-                                    <span class="fw-bold fs-5">Proteinas (OBLIGATORIO)</span>
->>>>>>> main
                                     <div class="form-check">
                                         <input type="checkbox" class="form-check-input-proteina" id="Proteina-1">
                                         <label for="Proteina-1" class="form-check-label">
@@ -1344,49 +1044,21 @@
                                     <!-- Extras -->
                                     <span class="fw-bold fs-5">Extras + $10mxn</span>
                                     <div class="form-check">
-<<<<<<< HEAD
-<<<<<<< HEAD
-                                        <input type="checkbox" class="form-check-input" id="Extras-1">
-=======
                                         <input type="checkbox" class="form-check-input INCREMENTO" value="10">
->>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
-=======
-                                        <input type="checkbox" class="form-check-input INCREMENTO" value="10">
->>>>>>> main
                                         <label for="Extras-1" class="form-check-label">
                                             Costra de Queso Oaxaca
                                         </label>
                                     </div>
                                     <div class="form-check">
-<<<<<<< HEAD
-<<<<<<< HEAD
-                                        <input type="checkbox" class="form-check-input" id="Extras-2">
-=======
                                         <input type="checkbox" class="form-check-input INCREMENTO" value="10">
->>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
-=======
-                                        <input type="checkbox" class="form-check-input INCREMENTO" value="10">
->>>>>>> main
                                         <label for="Extras-2" class="form-check-label">
                                             Extras Papas
                                         </label>
                                     </div>
                                     <hr>
-<<<<<<< HEAD
-<<<<<<< HEAD
-                                    <span class="fw-bold fs-5">Comentarios (opcional)</span>
-                                    <div class="form-comment">
-                                        <input type="text" class="form-comment-input" id="Comentarios">
-=======
                                     <span class="fw-bold fs-5">Comentarios</span>
                                     <div class="form-comment">
                                         <input type="text" class="form-comment-input" placeholder="Opcional">
->>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
-=======
-                                    <span class="fw-bold fs-5">Comentarios</span>
-                                    <div class="form-comment">
-                                        <input type="text" class="form-comment-input" placeholder="Opcional">
->>>>>>> main
                                     </div>
                                 </form>
                             </div>    
@@ -1394,14 +1066,6 @@
                     </div>
                 </div>
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-                <div class="modal-footer">  <!-- Footer-Modal -->
-                    <input type="number" placeholder="CANTIDAD" id="cantidad">
-                     <button type="submit" class="btn btn-primary" id="Agregar-Cambios">Agregar</button>
-=======
-=======
->>>>>>> main
                 <div class="modal-footer d-flex justify-content-between">  <!-- Footer-Modal -->
                     <div class="left-footer pb-2">
                         <label>TOTAL:</label>
@@ -1412,10 +1076,6 @@
                         <input type="number" class="cantidad" min="0" max="10" id="CANTIDAD" value="1">
                         <button type="submit" class="btn btn-primary btn-agregar PROD">Agregar</button>
                     </div>
-<<<<<<< HEAD
->>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
-=======
->>>>>>> main
                 </div>
             </div>
         </div>
@@ -1431,14 +1091,7 @@
                         <img src="./source/Chilango_Street_logo.jpg" alt="Chilango-Logo" width="40" height="40" class="rounded-3 me-2">
                     </div>
                     <h1>Papas a la Francesa:</h1>
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
                     <button type="reset" class="btn-close bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
->>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
-=======
-                    <button type="reset" class="btn-close bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
->>>>>>> main
                 </div>
 
                 <div class="modal-body">    <!-- Body-Modal -->
@@ -1460,23 +1113,10 @@
                             <div class="col-12 my-1">
                             <!-- Formulario  -->
                                 <form>
-<<<<<<< HEAD
-<<<<<<< HEAD
-                                    <label for="opciones" class="form-label">Selecciona un Tamaño:</label>
-                                    <select class="form-select" id="opciones" name="opciones">
-                                        <option value="Grande">Grande (Orden Completa) 40mxn</option>
-                                        <option value="Chica">Chica (Media Orden) 25mxn</option>
-=======
-=======
->>>>>>> main
                                     <label for="opciones" class="form-label fs-5 fw-bold">Selecciona Tamaño de la Orden:</label>
                                     <select class="form-select" id="tamaño-papas">
                                         <option value="grande" data-precio-base="40">Grande (Orden Completa) 40mxn</option>
                                         <option value="pequeño" data-precio-base="25">Chica (Media Orden) 25mxn</option>
-<<<<<<< HEAD
->>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
-=======
->>>>>>> main
                                     </select>
                                     <span class="fs-5 fw-bold">Ingredientes</span>
                                     <div class="form-check">
@@ -1503,14 +1143,6 @@
                     </div>
                 </div>
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-                <div class="modal-footer">  <!-- Footer-Modal -->
-                    <input type="number" placeholder="CANTIDAD" id="cantidad">
-                     <button type="submit" class="btn btn-primary" id="Agregar-Cambios">Agregar</button>
-=======
-=======
->>>>>>> main
                 <div class="modal-footer d-flex justify-content-between">  <!-- Footer-Modal -->
                     <div class="left-footer pb-2">
                         <label>TOTAL:</label>
@@ -1521,10 +1153,6 @@
                         <input type="number" class="cantidad" min="0" max="10" id="cantidad-papas" value="1">
                         <button type="submit" class="btn btn-primary btn-agregar">Agregar</button>
                     </div>
-<<<<<<< HEAD
->>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
-=======
->>>>>>> main
                 </div>
             </div>
         </div>
@@ -1540,14 +1168,7 @@
                         <img src="./source/Chilango_Street_logo.jpg" alt="Chilango-Logo" width="40" height="40" class="rounded-3 me-2">
                     </div>
                     <h1>Gelatinas y Flanes:</h1>
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
                     <button type="reset" class="btn-close bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
->>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
-=======
-                    <button type="reset" class="btn-close bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
->>>>>>> main
                 </div>
 
                 <div class="modal-body">    <!-- Body-Modal -->
@@ -1569,18 +1190,8 @@
                             <div class="col-12 my-1">
                             <!-- Formulario  -->
                                 <form>
-<<<<<<< HEAD
-<<<<<<< HEAD
-                                    <label for="opciones" class="form-label">Selecciona un Postre:</label>
-                                    <select class="form-select" id="opciones" name="opciones">
-=======
                                     <label for="opciones" class="form-label">Selecciona un Postre: </label>
                                     <select class="form-select" id="opciones">
->>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
-=======
-                                    <label for="opciones" class="form-label">Selecciona un Postre: </label>
-                                    <select class="form-select" id="opciones">
->>>>>>> main
                                         <option value="Mango">GELATINA-(Mango)</option>
                                         <option value="Fresa">GELATINA-(Fresa)</option>
                                         <option value="Limon">GELATINA-(Limon)</option>
@@ -1595,14 +1206,6 @@
                     </div>
                 </div>
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-                <div class="modal-footer">  <!-- Footer-Modal -->
-                    <input type="number" placeholder="CANTIDAD" id="cantidad">
-                     <button type="submit" class="btn btn-primary" id="Agregar-Cambios">Agregar</button>
-=======
-=======
->>>>>>> main
                 <div class="modal-footer d-flex justify-content-between">  <!-- Footer-Modal -->
                     <div class="left-footer pb-2">
                         <label>TOTAL:</label>
@@ -1613,10 +1216,6 @@
                         <input type="number" class="cantidad" min="0" max="10" value="1" id="CANTIDAD">
                         <button type="submit" class="btn btn-primary btn-agregar">Agregar</button>
                     </div>
-<<<<<<< HEAD
->>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
-=======
->>>>>>> main
                 </div>
             </div>
         </div>
@@ -1632,14 +1231,7 @@
                         <img src="./source/Chilango_Street_logo.jpg" alt="Chilango-Logo" width="40" height="40" class="rounded-3 me-2">
                     </div>
                     <h1>Agua del Dia:</h1>
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
                     <button type="reset" class="btn-close bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
->>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
-=======
-                    <button type="reset" class="btn-close bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
->>>>>>> main
                 </div>
 
                 <div class="modal-body">    <!-- Body-Modal -->
@@ -1661,29 +1253,12 @@
                             <div class="col-12 my-1">
                             <!-- Formulario  -->
                                 <form>
-<<<<<<< HEAD
-<<<<<<< HEAD
-                                    <label for="opciones" class="form-label">Selecciona un Agua:</label>
-                                    <select class="form-select" id="opciones" name="opciones">
-                                        <option value="Agua-1">Jamaica</option>
-                                        <option value="Agua-2">Horchata</option>
-                                        <option value="Agua-3">Tamarindo</option>
-                                        <option value="Agua-4">Simple</option>
-=======
                                     <label for="opciones" class="form-label">Selecciona un Sabor: </label>
                                     <select class="form-select" id="opciones" name="opciones">
-=======
-                                    <label for="opciones" class="form-label">Selecciona un Sabor: </label>
-                                    <select class="form-select" id="opciones" name="opciones">
->>>>>>> main
                                         <option>Jamaica</option>
                                         <option>Horchata</option>
                                         <option>Tamarindo</option>
                                         <option>Simple</option>
-<<<<<<< HEAD
->>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
-=======
->>>>>>> main
                                     </select>
                                 </form>
                             </div>    
@@ -1691,14 +1266,6 @@
                     </div>
                 </div>
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-                <div class="modal-footer">  <!-- Footer-Modal -->
-                    <input type="number" placeholder="CANTIDAD" id="cantidad">
-                     <button type="submit" class="btn btn-primary" id="Agregar-Cambios">Agregar</button>
-=======
-=======
->>>>>>> main
                 <div class="modal-footer d-flex justify-content-between">  <!-- Footer-Modal -->   
                     <div class="left-footer pb-2">
                         <label>TOTAL:</label>
@@ -1709,10 +1276,6 @@
                         <input type="number" class="cantidad" min="0" max="10" value="1" id="CANTIDAD">
                         <button type="submit" class="btn btn-primary btn-agregar">Agregar</button>
                     </div>
-<<<<<<< HEAD
->>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
-=======
->>>>>>> main
                 </div>
             </div>
         </div>
@@ -1728,14 +1291,7 @@
                         <img src="./source/Chilango_Street_logo.jpg" alt="Chilango-Logo" width="40" height="40" class="rounded-3 me-2">
                     </div>
                     <h1>Refrescos:</h1>
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
                     <button type="reset" class="btn-close bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
->>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
-=======
-                    <button type="reset" class="btn-close bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
->>>>>>> main
                 </div>
 
                 <div class="modal-body">    <!-- Body-Modal -->
@@ -1770,14 +1326,6 @@
                     </div>
                 </div>
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-                <div class="modal-footer">  <!-- Footer-Modal -->
-                    <input type="number" placeholder="CANTIDAD" id="cantidad">
-                     <button type="submit" class="btn btn-primary" id="Agregar-Cambios">Agregar</button>
-=======
-=======
->>>>>>> main
                 <div class="modal-footer d-flex justify-content-between">  <!-- Footer-Modal -->    
                     <div class="left-footer pb-2">
                         <label>TOTAL:</label>
@@ -1788,10 +1336,6 @@
                         <input type="number" class="cantidad" min="0" max="10" value="1" id="CANTIDAD">
                         <button type="submit" class="btn btn-primary btn-agregar">Agregar</button>
                     </div>
-<<<<<<< HEAD
->>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
-=======
->>>>>>> main
                 </div>
             </div>
         </div>
@@ -1807,14 +1351,7 @@
                         <img src="./source/Chilango_Street_logo.jpg" alt="Chilango-Logo" width="40" height="40" class="rounded-3 me-2">
                     </div>
                     <h1>Boing:</h1>
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
                     <button type="reset" class="btn-close bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
->>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
-=======
-                    <button type="reset" class="btn-close bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
->>>>>>> main
                 </div>
 
                 <div class="modal-body">    <!-- Body-Modal -->
@@ -1826,15 +1363,7 @@
                                         <img src="./source//MENU/boing.jpg" alt="Bebidas-img" width="100" height="100" class="rounded-3">
                                     </div>
                                     <div class="img-text-area p-2">
-<<<<<<< HEAD
-<<<<<<< HEAD
-                                        <p>Boing (354 ml)</p>
-=======
                                         <p>Boing diferentes sabores (354 ml)</p>
->>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
-=======
-                                        <p>Boing diferentes sabores (354 ml)</p>
->>>>>>> main
                                     </div>
                                 </div>
                             </div>
@@ -1844,15 +1373,7 @@
                             <div class="col-12 my-1">
                             <!-- Formulario  -->
                                 <form>
-<<<<<<< HEAD
-<<<<<<< HEAD
-                                    <label for="opciones" class="form-label">Selecciona un Jugo:</label>
-=======
                                     <label for="opciones" class="form-label">Selecciona un Sabor:</label>
->>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
-=======
-                                    <label for="opciones" class="form-label">Selecciona un Sabor:</label>
->>>>>>> main
                                     <select class="form-select" id="opciones" name="opciones">
                                         <option value="Mango">Mango</option>
                                         <option value="Guayaba">Guayaba</option>
@@ -1865,14 +1386,6 @@
                     </div>
                 </div>
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-                <div class="modal-footer">  <!-- Footer-Modal -->
-                    <input type="number" placeholder="CANTIDAD" id="cantidad">
-                     <button type="submit" class="btn btn-primary" id="Agregar-Cambios">Agregar</button>
-=======
-=======
->>>>>>> main
                 <div class="modal-footer d-flex justify-content-between">  <!-- Footer-Modal -->
                     <div class="left-footer pb-2">
                         <label>TOTAL:</label>
@@ -1883,10 +1396,6 @@
                         <input type="number" class="cantidad" min="0" max="10" value="1" id="CANTIDAD">
                         <button type="submit" class="btn btn-primary btn-agregar">Agregar</button>
                     </div>
-<<<<<<< HEAD
->>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
-=======
->>>>>>> main
                 </div>
             </div>
         </div>
@@ -2093,40 +1602,19 @@
         </div>
     </div>
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
     <!-- JQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
->>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
-=======
-    <!-- JQuery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
->>>>>>> main
     <!-- Sweet Alert JS -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- Boostrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- JavaScript -->
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-    <script src="./JS/Negocio.js"></script>
->>>>>>> main
-    <script src="./JS/Verificar.js"></script>
-    <script src="./JS/Cantidad.js"></script>
-    <script src="./JS/Precios.js"></script>
-    <script src="./JS/Papas.js"></script>
-
-=======
     <script src="./JS/Negocio.js"></script>
     <script src="./JS/Verificar.js"></script>
     <script src="./JS/Cantidad.js"></script>
     <script src="./JS/Precios.js"></script>
     <script src="./JS/Papas.js"></script>
 
->>>>>>> Stashed changes
->>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
 </body>
 
 </html>

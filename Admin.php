@@ -62,10 +62,13 @@
     <!-- Filtrar Productos por Categoria al Principio de Pagina -->
         <ul class="nav fs-4 d-flex justify-content-center">
             <li class="my-2">
-                <a class="p-3 nav-item rounded-bottom-4">CREAR PROD.</a>
+                <a class="p-3 nav-item rounded-bottom-4" data-bs-toggle="modal" data-bs-target="#M-Agregar-Prod">Crear Prod.</a>
             </li>
             <li class="my-2">
-                <a class="p-3 nav-item rounded-bottom-4 ">ELIMINAR PROD.</a>
+                <a class="p-3 nav-item rounded-bottom-4 "  data-bs-toggle="modal" data-bs-target="#M-Eliminar-Prod">Eliminar Prod.</a>
+            </li>
+            <li class="my-2">
+                <a class="p-3 nav-item rounded-bottom-4">Rutas</a>
             </li>
         </ul>
         <hr>
@@ -917,15 +920,15 @@
         </div>
     </div>
 
-    <!-- Modal MODIFICAR NEGOCIO: Abrir o Cerrar Negocio -->
-    <div class="modal fade" id="M-Mod-Negocio" aria-hidden="true">
+    <!-- Modal Eliminar PRODUCTO -->
+    <div class="modal fade" id="M-Eliminar-Prod" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header"> <!--Header-Modal -->
                     <div class="logo">
                         <img src="./source/Chilango_Street_logo.jpg" alt="Chilango-Logo" width="40" height="40" class="rounded-3 me-2">
                     </div>
-                    <h1>Negocio: Abrir / Cerrar</h1>
+                    <h1>Eliminar Producto:</h1>
                 </div>
 
                 <div class="modal-body">    <!-- Body-Modal -->
@@ -934,9 +937,19 @@
                             <div class="col-12 my-2 mx-auto">
                                 <div class="container">
                                     <div class="img-text-area p-2">
-                                        <p>Deseas Cerrar o Abrir el Negocio?</p>
+                                        <p>Producto a Eliminar:</p>
                                     </div>
                                 </div>
+                                <form method="post">
+                                    <input type="text" id="Nombre_Producto" name="Nombre_Producto" class="form-text-input">
+                                    <label for="Nombre_Producto" class="form-label">Nombre Producto</label>
+                                    <select name="Categoria_Producto" id="Categoria_Prod" class="form-select-input me-5">
+                                        <option value="comida" id="comida_prod">Comida</option>
+                                        <option value="extras" id="extras_prod">Complementos</option>
+                                        <option value="bebidas" id="bebidas_prod">Bebidas</option>
+                                    </select>
+                                    <label for="Categoria_Prod" class="form-label ms-5">Categoria</label>
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -944,7 +957,56 @@
 
                 <div class="modal-footer">  <!-- Footer-Modal -->
                     <button type="submit" class="btn btn-warning" id="Cerrar">Cerrar</button>
-                     <button type="submit" class="btn btn-primary" id="Abrir">Abrir</button>
+                     <button type="submit" class="btn btn-primary" id="Agregar-Producto">Eliminar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal AGREGAR PRODUCTO -->
+    <div class="modal fade" id="M-Agregar-Prod" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header"> <!--Header-Modal -->
+                    <div class="logo">
+                        <img src="./source/Chilango_Street_logo.jpg" alt="Chilango-Logo" width="40" height="40" class="rounded-3 me-2">
+                    </div>
+                    <h1>Agregar Producto:</h1>
+                </div>
+
+                <div class="modal-body">    <!-- Body-Modal -->
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12 my-2 mx-auto">
+                                <div class="container">
+                                    <div class="img-text-area p-2">
+                                        <p>Nuevo Producto:</p>
+                                    </div>
+                                </div>
+                                <form method="post">
+                                    <input type="text" id="Nombre_Producto" name="Nombre_Producto" class="form-text-input">
+                                    <label for="Nombre_Producto" class="form-label">Nombre Producto</label>
+                                    <input type="text" id="Descrip_Producto" name="Descrip_Producto" class="form-text-input">
+                                    <label for="Descrip_Producto" class="form-label">Descripcion</label>
+                                    <select name="Categoria_Producto" id="Categoria_Prod" class="form-select-input me-5">
+                                        <option value="comida" id="comida_prod">Comida</option>
+                                        <option value="extras" id="extras_prod">Complementos</option>
+                                        <option value="bebidas" id="bebidas_prod">Bebidas</option>
+                                    </select>
+                                    <label for="Categoria_Prod" class="form-label ms-5">Categoria</label>
+                                    <input type="number" id="Precio_Producto" name="Precio_Producto" class="form-number-input">
+                                    <label for="Precio_Producto" class="form-label">Precio</label>
+                                    <input type="number" id="Cantidad_Producto" name="Cantidad_Producto" class="form-number-input">
+                                    <label for="Cantidad_Producto" class="form-label">Cantidad</label>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-footer">  <!-- Footer-Modal -->
+                    <button type="submit" class="btn btn-warning" id="Cerrar">Cerrar</button>
+                     <button type="submit" class="btn btn-primary" id="Agregar-Producto">Agregar</button>
                 </div>
             </div>
         </div>

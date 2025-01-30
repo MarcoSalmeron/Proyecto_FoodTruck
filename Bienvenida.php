@@ -22,38 +22,16 @@
 
             <div class="image-top-section mb-1">
                 <!-- Boton (Modal)-->
-<<<<<<< HEAD
-<<<<<<< HEAD
-                <button type="button" data-bs-toggle="modal" data-bs-target="#Horario" class="btn-top-header me-2 p-1" id="btn-top-Horario">
-=======
                 <button type="button" data-bs-toggle="modal" data-bs-target="#Horario" class="btn-top-header me-3 p-1" id="btn-top-Horario">
->>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
-=======
-                <button type="button" data-bs-toggle="modal" data-bs-target="#Horario" class="btn-top-header me-3 p-1" id="btn-top-Horario">
->>>>>>> main
                     <!-- Logo de Reloj -->
                     <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-clock-fill" viewBox="0 0 16 16">
                         <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z" />
                     </svg>
                     <!--Modificar span Respecto al Horario-->
-<<<<<<< HEAD
-<<<<<<< HEAD
-                    <span class="Actividad mx-2" name="Horario">Abierto</span>
-
-                    <!-- Cambiar a Color verde el icono al Abrir y Cambiar a Rojo al Cerrar-->
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="green" class="Actividad bi bi-record-circle" viewBox="0 0 16 16" name="icono-actividad">
-=======
                     <span class="Actividad mx-2" name="Horario"></span>
 
                     <!-- Cambiar a Color verde el icono al Abrir y Cambiar a Rojo al Cerrar-->
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="red" class="Actividad bi bi-record-circle" viewBox="0 0 16 16" name="icono-actividad">
->>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
-=======
-                    <span class="Actividad mx-2" name="Horario"></span>
-
-                    <!-- Cambiar a Color verde el icono al Abrir y Cambiar a Rojo al Cerrar-->
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="red" class="Actividad bi bi-record-circle" viewBox="0 0 16 16" name="icono-actividad">
->>>>>>> main
                         <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
                         <path d="M11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
                     </svg>
@@ -133,30 +111,13 @@
         <!-- Footer: Regresar a Bienvenida e Info -->
         <footer class="mt-3 rounded-top-4">
             <div class="container-fluid text-center">
-<<<<<<< HEAD
-<<<<<<< HEAD
-                <div class="row mx-2">
-                    <!-- 100% en Celular y 10% en Superiores -->
-                    <div class="col-12 col-md-2 my-1 mx-2">
-=======
                 <div class="row mx-5">
                     <!-- 100% en Celular y 10% en Superiores -->
                     <div class="col-12 col-md-2 my-1 mx-auto">
->>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
-=======
-                <div class="row mx-5">
-                    <!-- 100% en Celular y 10% en Superiores -->
-                    <div class="col-12 col-md-2 my-1 mx-auto">
->>>>>>> main
                         <div class="footer-item">
                             <a role="button" href="Menu.php" id="btn-footer-Menu" class="btn btn-footer">Menu Digital</a>
                         </div>
                     </div>
-<<<<<<< HEAD
-<<<<<<< HEAD
-                    <!-- 100% en Celular y 10% en Superiores -->
-                    <div class="col-12 col-md-2 my-1 mx-2">
-=======
                     <div class="col-12 col-md-2 my-1 mx-auto">
                         <div class="footer-item p-2">
                             <span>Copyright ©</span>
@@ -164,33 +125,12 @@
                     </div>
                     <!-- 100% en Celular y 10% en Superiores -->
                     <div class="col-12 col-md-2 my-1 mx-auto">
->>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
-=======
-                    <div class="col-12 col-md-2 my-1 mx-auto">
-                        <div class="footer-item p-2">
-                            <span>Copyright ©</span>
-                        </div>
-                    </div>
-                    <!-- 100% en Celular y 10% en Superiores -->
-                    <div class="col-12 col-md-2 my-1 mx-auto">
->>>>>>> main
                         <div class="footer-item">
                             <a type="button" class="btn btn-footer" data-bs-toggle="modal" data-bs-target="#Horario">
                                 Horario
                             </a>
                         </div>
                     </div>
-<<<<<<< HEAD
-<<<<<<< HEAD
-                    <div class="col-12 col-md-2 my-1 mx-2">
-                        <div class="footer-item p-2">
-                            <span>Copyright ©</span>
-                        </div>
-                    </div>
-=======
->>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
-=======
->>>>>>> main
                 </div>
             </div>
         </footer>
@@ -398,16 +338,6 @@
         </div>
     </div>
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-=======
-    <!-- Boostrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- javaScript -->
-     <script src="./JS/Negocio.js"></script>
->>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
-=======
     <!-- Boostrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Sweet Alert.js -->
@@ -415,7 +345,6 @@
     <!-- javaScript -->
     <script src="./JS/Negocio.js"></script>
 
->>>>>>> main
 </body>
 
 </html>

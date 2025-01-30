@@ -110,12 +110,7 @@ try{
     <!-- Footer: Regresar a Bienvenida e Info -->
     <footer class="mt-3 rounded-top-4">
         <div class="container-fluid text-center">
-<<<<<<< HEAD
-<<<<<<< HEAD
-            <div class="row mx-2">
-=======
             <div class="row mx-5">
->>>>>>> main
                 <!-- 100% en Celular y 10% en Superiores -->
                 <div class="col-12 col-md-2 my-1 mx-auto">
                     <div class="footer-item">
@@ -123,22 +118,7 @@ try{
                     </div>
                 </div>
                 <!-- 100% en Celular y 10% en Superiores -->
-<<<<<<< HEAD
-                <div class="col-12 col-md-2 my-1 mx-2">
-=======
-            <div class="row mx-5">
-                <!-- 100% en Celular y 10% en Superiores -->
                 <div class="col-12 col-md-2 my-1 mx-auto">
-                    <div class="footer-item">
-                        <a role="button" href="Bienvenida.php" id="btn-footer-Inicio" class="btn btn-footer fw-bold">REGRESAR!</a>
-                    </div>
-                </div>
-                <!-- 100% en Celular y 10% en Superiores -->
-                <div class="col-12 col-md-2 my-1 mx-auto">
->>>>>>> 075cf5d4b5b831eae9e56ebaae382b0df123841a
-=======
-                <div class="col-12 col-md-2 my-1 mx-auto">
->>>>>>> main
                     <div class="footer-item p-2">
                         <span>Copyright ©</span>
                     </div>
