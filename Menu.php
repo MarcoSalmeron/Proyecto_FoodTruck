@@ -474,34 +474,31 @@
                                     <hr>
                                     <!-- Extras -->
                                     <span class="fw-bold fs-5">Extras + $10mxn</span>
+                                    
                                     <div class="contador">
-                                        <div class="form-check">
-                                            <input type="checkbox" class="form-check-input INCREMENTO" value="10">
-                                            <label for="Extras-1" class="form-check-label">
-                                                Costra de Queso Oaxaca
-                                            </label>
-                                            <button onclick="decrementar()">−</button>
-                                            <span id="numero">0</span>
-                                            <button onclick="incrementar()">+</button>
-                                        </div>
+
+                                        <label for="Extras-1" class="form-check-label">
+                                            Costra de Queso Oaxaca
+                                        </label>
+                                        <button class="decrementar">−</button>
+                                        <span class="numero">0</span>
+                                        <button class="incrementar">+</button>
                                     </div>
+
                                     <div class="contador">
-                                        <div class="form-check">
-                                            <input type="checkbox" class="form-check-input INCREMENTO" value="10">
-                                            <label for="Extras-1" class="form-check-label">
-                                                Papas Extras
-                                            </label>
-                                            <button onclick="decrementar()">−</button>
-                                            <span id="numero">0</span>
-                                            <button onclick="incrementar()">+</button>
-                                        </div>
+                                        <label for="Extras-2" class="form-check-label">
+                                            Papas Extras
+                                        </label>
+                                        <button class="decrementar">−</button>
+                                        <span class="numero">0</span>
+                                        <button class="incrementar">+</button>
                                     </div>
-                                       
-                                        <hr>
-                                        <span class="fw-bold fs-5">Comentarios</span>
-                                        <div class="form-comment">
-                                            <input type="text" class="form-comment-input" placeholder="Opcional">
-                                        </div>
+
+                                    <hr>
+                                    <span class="fw-bold fs-5">Comentarios</span>
+                                    <div class="form-comment">
+                                        <input type="text" class="form-comment-input" placeholder="Opcional">
+                                    </div>
                                 </form>
                             </div>
                         </div>
@@ -511,7 +508,7 @@
                 <div class="modal-footer d-flex justify-content-between"> <!-- Footer-Modal -->
                     <div class="left-footer pb-2">
                         <label for="Precio-Tacos">TOTAL:</label>
-                        <span class="fs-3 PRECIO" data-precio-base="22">22</span>MXN
+                        <span class="fs-3 PRECIO" data-precio-base="22">22</span> MXN
                     </div>
                     <div class="right-footer">
                         <label for="CANTIDAD">CANTIDAD:</label>
@@ -625,17 +622,23 @@
                                     <hr>
                                     <!-- Extras -->
                                     <span class="fw-bold fs-5">Extras + $10mxn</span>
-                                    <div class="form-check">
-                                        <input type="checkbox" class="form-check-input INCREMENTO" value="10">
+                                    <div class="contador">
+
                                         <label for="Extras-1" class="form-check-label">
                                             Costra de Queso Oaxaca
                                         </label>
+                                        <button class="decrementar">−</button>
+                                        <span class="numero">0</span>
+                                        <button class="incrementar">+</button>
                                     </div>
-                                    <div class="form-check">
-                                        <input type="checkbox" class="form-check-input INCREMENTO" value="10">
+
+                                    <div class="contador">
                                         <label for="Extras-2" class="form-check-label">
-                                            Extras Papas
+                                            Papas Extras
                                         </label>
+                                        <button class="decrementar">−</button>
+                                        <span class="numero">0</span>
+                                        <button class="incrementar">+</button>
                                     </div>
                                     <hr>
                                     <span class="fw-bold fs-5">Comentarios</span>
@@ -763,18 +766,25 @@
                                     </div>
                                     <hr>
                                     <!-- Extras -->
+                                    <!-- Extras -->
                                     <span class="fw-bold fs-5">Extras + $10mxn</span>
-                                    <div class="form-check">
-                                        <input type="checkbox" class="form-check-input INCREMENTO" value="10">
+                                    <div class="contador">
+
                                         <label for="Extras-1" class="form-check-label">
                                             Costra de Queso Oaxaca
                                         </label>
+                                        <button class="decrementar">−</button>
+                                        <span class="numero">0</span>
+                                        <button class="incrementar">+</button>
                                     </div>
-                                    <div class="form-check">
-                                        <input type="checkbox" class="form-check-input INCREMENTO" value="10">
+
+                                    <div class="contador">
                                         <label for="Extras-2" class="form-check-label">
-                                            Extras Papas
+                                            Papas Extras
                                         </label>
+                                        <button class="decrementar">−</button>
+                                        <span class="numero">0</span>
+                                        <button class="incrementar">+</button>
                                     </div>
                                     <hr>
                                     <span class="fw-bold fs-5">Comentarios</span>
@@ -914,18 +924,25 @@
                                     </div>
                                     <hr>
                                     <!-- Extras -->
+                                    <!-- Extras -->
                                     <span class="fw-bold fs-5">Extras + $10mxn</span>
-                                    <div class="form-check">
-                                        <input type="checkbox" class="form-check-input INCREMENTO" value="10">
+                                    <div class="contador">
+
                                         <label for="Extras-1" class="form-check-label">
                                             Costra de Queso Oaxaca
                                         </label>
+                                        <button class="decrementar">−</button>
+                                        <span class="numero">0</span>
+                                        <button class="incrementar">+</button>
                                     </div>
-                                    <div class="form-check">
-                                        <input type="checkbox" class="form-check-input INCREMENTO" value="10">
+
+                                    <div class="contador">
                                         <label for="Extras-2" class="form-check-label">
-                                            Extras Papas
+                                            Papas Extras
                                         </label>
+                                        <button class="decrementar">−</button>
+                                        <span class="numero">0</span>
+                                        <button class="incrementar">+</button>
                                     </div>
                                     <hr>
                                     <span class="fw-bold fs-5">Comentarios</span>
@@ -1054,17 +1071,23 @@
                                     <hr>
                                     <!-- Extras -->
                                     <span class="fw-bold fs-5">Extras + $10mxn</span>
-                                    <div class="form-check">
-                                        <input type="checkbox" class="form-check-input INCREMENTO" value="10">
+                                    <div class="contador">
+
                                         <label for="Extras-1" class="form-check-label">
                                             Costra de Queso Oaxaca
                                         </label>
+                                        <button class="decrementar">−</button>
+                                        <span class="numero">0</span>
+                                        <button class="incrementar">+</button>
                                     </div>
-                                    <div class="form-check">
-                                        <input type="checkbox" class="form-check-input INCREMENTO" value="10">
+
+                                    <div class="contador">
                                         <label for="Extras-2" class="form-check-label">
-                                            Extras Papas
+                                            Papas Extras
                                         </label>
+                                        <button class="decrementar">−</button>
+                                        <span class="numero">0</span>
+                                        <button class="incrementar">+</button>
                                     </div>
                                     <hr>
                                     <span class="fw-bold fs-5">Comentarios</span>

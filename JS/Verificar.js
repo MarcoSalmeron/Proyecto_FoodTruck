@@ -40,19 +40,4 @@ document.addEventListener('DOMContentLoaded', function () {
 	  });	  
 	  
 });
-//Contador de extras 
-let contador = 0;
-const numeroElemento = document.getElementById("numero");
-const botonIncrementar = document.getElementById("incrementar");
-const botonDecrementar = document.getElementById("decrementar");
-
-botonIncrementar.addEventListener("click", function() {
-	contador++;
-	numeroElemento.textContent = contador;
-});
-
-botonDecrementar.addEventListener("click", function() {
-	contador--;
-	numeroElemento.textContent = contador;
-});
 	
