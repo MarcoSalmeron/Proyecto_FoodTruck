@@ -509,6 +509,7 @@
                     <div class="left-footer pb-2">
                         <label for="Precio-Tacos">TOTAL:</label>
                         <span class="fs-3 PRECIO" data-precio-base="22">22</span> MXN
+                    
                     </div>
                     <div class="right-footer">
                         <label for="CANTIDAD">CANTIDAD:</label>
@@ -927,7 +928,6 @@
                                     <!-- Extras -->
                                     <span class="fw-bold fs-5">Extras + $10mxn</span>
                                     <div class="contador">
-
                                         <label for="Extras-1" class="form-check-label">
                                             Costra de Queso Oaxaca
                                         </label>

@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     icon: "error",
                     title: "Oops...",
                     text: "La cantidad máxima de extras es 10!",
-                    footer: '-----------------------------------'
+                    footer: '---------------------------------'
                 });
             }
         });
