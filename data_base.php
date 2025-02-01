@@ -5,10 +5,10 @@ $conexion = null;
 try {
     $engine = "mysql";
     $host="localhost";
-    $db="food_truck";
+    $db="FOOD_TRUCK";
     $charset = "utf8";
     $username="root";
-    $password="MrFlippers16";
+    $password="123456789";
 
     $options =
     [
