@@ -5,7 +5,7 @@ $conexion = null;
 try {
     $engine = "mysql";
     $host="localhost";
-    $db="FOOD_TRUCK";
+    $db="p_food_truck";
     $charset = "utf8";
     $username="root";
     $password="123456789";
